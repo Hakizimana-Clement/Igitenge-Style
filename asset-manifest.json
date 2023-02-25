@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/igitenge-style/static/css/main.a419f033.css",
+    "main.js": "/igitenge-style/static/js/main.8e7a1fd8.js",
+    "index.html": "/igitenge-style/index.html",
+    "main.a419f033.css.map": "/igitenge-style/static/css/main.a419f033.css.map",
+    "main.8e7a1fd8.js.map": "/igitenge-style/static/js/main.8e7a1fd8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a419f033.css",
+    "static/js/main.8e7a1fd8.js"
+  ]
+}
