@@ -15,7 +15,8 @@ export default function Navbar() {
     }
     console.log(window.scrollY);
   };
-  // window.addEventListener("scroll", changeBackground);
+  window.addEventListener("scroll", changeBackground);
+
   return (
     <>
       <div>
@@ -55,7 +56,7 @@ export default function Navbar() {
                 </li>
                 <li className="nav-item">
                   <a className="nav-link " aria-current="page" href="#products">
-                    Gategories
+                    Products
                   </a>
                 </li>
                 <li className="nav-item">
@@ -79,10 +80,7 @@ export default function Navbar() {
                 </li>
               </ul>
               <button className="  btn btn-danger btn-sale  ">
-                <a
-                  href="/some/valid/uri#"
-                  className=" text-light text-decoration-none"
-                >
+                <a href="#uri" className=" text-light text-decoration-none">
                   Sale
                 </a>
               </button>

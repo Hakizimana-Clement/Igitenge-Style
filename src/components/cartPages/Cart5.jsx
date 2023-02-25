@@ -46,14 +46,16 @@ export default function Cart1() {
             </p>
             <h3>Description:</h3>
             <ul>
-              <li>100% Denim</li>
-              <li>
-                100% Cotton Ankara back panel with embroidered African map
-              </li>
+              <li>Puff sleeve</li>
+              <li>Ruffle cuff at sleeve</li>
+              <li>Mandarin Collar with tie</li>
+              <li>Invisible placet with button-up</li>
+              <li>Round hem</li>
+              <li>100% Cotton</li>
             </ul>
             <h3>Care:</h3>
             <ul>
-              <li>Machine wash cold, tumble dry low.</li>
+              <li>Hand wash, mild detergent. Do not bleach. Hang to dry</li>
             </ul>
             <p>
               The main color of this igitenge is yellow. <br /> The yellow color

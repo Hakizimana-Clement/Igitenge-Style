@@ -46,22 +46,21 @@ export default function Cart1() {
             </p>
             <h3>Description:</h3>
             <ul>
-              <li>100% Denim</li>
-              <li>
-                100% Cotton Ankara back panel with embroidered African map
-              </li>
+              <li>Fitted Stretch Woven Dress</li>
+              <li>Cut-Out Shoulder</li>
+              <li>Mock Neck</li>
+              <li>Hook and Eye at Center Back of Collar</li>
+              <li>Invisible Zipper with Hook and Eye at Side Seam</li>
+              <li>Above-Knee Length</li>
+              <li>Full Length: 33"</li>
+              <li>Rayon/nylon/spandex blend</li>
             </ul>
             <h3>Care:</h3>
             <ul>
-              <li>Machine wash cold, tumble dry low.</li>
-            </ul>
-            <p>
-              The main color of this igitenge is yellow. <br /> The yellow color
-              in color theory says it's bring happiness.
-            </p>
-            <h3>Styles:</h3>
-            <ul>
-              <li>This style is best to wear in summer season.</li>
+              <li>
+                Use mild detergent. Do not bleach. Wash & iron inside out.
+                Machine wash cold. Hang to dry. Lightly iron on low hea
+              </li>
             </ul>
           </div>
           <div className="cart-quality">

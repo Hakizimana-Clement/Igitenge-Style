@@ -7,6 +7,7 @@ const myStyle = {
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
+  marginTop: "5.7%",
 };
 
 const boxStyle = {

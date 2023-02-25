@@ -46,22 +46,21 @@ export default function Cart1() {
             </p>
             <h3>Description:</h3>
             <ul>
-              <li>100% Denim</li>
-              <li>
-                100% Cotton Ankara back panel with embroidered African map
-              </li>
+              <li>Notch collar</li>
+              <li>Button-up</li>
+              <li>2 buttons at cuff</li>
+              <li>Detachable sash at waist</li>
+              <li>2 pockets at sides</li>
+              <li>Curved hem</li>
+              <li>100% Cotton Ankara</li>
+              <li>Can be worn as a top, dress, or light jacket</li>
             </ul>
             <h3>Care:</h3>
             <ul>
-              <li>Machine wash cold, tumble dry low.</li>
-            </ul>
-            <p>
-              The main color of this igitenge is yellow. <br /> The yellow color
-              in color theory says it's bring happiness.
-            </p>
-            <h3>Styles:</h3>
-            <ul>
-              <li>This style is best to wear in summer season.</li>
+              <li>
+                Hand wash separately. Use mild detergent. Do not bleach. Hang to
+                dry. Iron inside out.
+              </li>
             </ul>
           </div>
           <div className="cart-quality">

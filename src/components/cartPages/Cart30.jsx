@@ -46,6 +46,17 @@ export default function Cart1() {
             </p>
             <h3>Description:</h3>
             <ul>
+              <li>Non-stretch denim.</li>
+              <li>Light indigo wash.</li>
+              <li>Long sleeves, button cuffs.</li>
+              <li>Point collar, button front.</li>
+              <li>
+                Button-flap patch pockets at chest, slant welt pockets at hips.
+              </li>
+              <li>Button-tabs at rear hem.</li>
+              <li>Seamed yoke</li>
+              <li>Six-button front.</li>
+              <li>Slight distressed with ankara patch</li>
               <li>100% Denim</li>
               <li>
                 100% Cotton Ankara back panel with embroidered African map
@@ -55,14 +66,14 @@ export default function Cart1() {
             <ul>
               <li>Machine wash cold, tumble dry low.</li>
             </ul>
-            <p>
+            {/* <p>
               The main color of this igitenge is yellow. <br /> The yellow color
               in color theory says it's bring happiness.
-            </p>
-            <h3>Styles:</h3>
+            </p> */}
+            {/* <h3>Styles:</h3>
             <ul>
               <li>This style is best to wear in summer season.</li>
-            </ul>
+            </ul> */}
           </div>
           <div className="cart-quality">
             <h3>Select size:</h3>

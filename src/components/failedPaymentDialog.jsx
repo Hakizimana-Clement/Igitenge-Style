@@ -20,14 +20,14 @@ const formStyle = {
   gap: "7px",
   marginTop: "5%",
 };
-export default function Payment() {
+export default function Failed() {
   return (
     <div style={containerStyle}>
       <h1 className="mb-3">Payment form</h1>
       <form style={formStyle}>
         <Flip>
           <CheckCircleOutlineIcon />
-          <p style={{ paddingBottom: "0" }}>Payment Successfully</p>
+          <p style={{ paddingBottom: "0" }}>Payment Failed, try again</p>
         </Flip>
       </form>
     </div>

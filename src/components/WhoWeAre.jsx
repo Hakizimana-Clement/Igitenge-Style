@@ -1,6 +1,5 @@
 import React from "react";
 import Slide from "react-reveal/Slide";
-import Fade from "react-reveal/Fade";
 
 export default function WhoWeAre() {
   return (

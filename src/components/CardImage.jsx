@@ -44,7 +44,7 @@ export default function Card() {
           }}
         >
           {itemData.map((item) => (
-            <Fade bottom>
+            <Fade bottom distance="50%">
               <ImageListItem key={item.img}>
                 <img
                   src={`${item.img}?w=248&fit=crop&auto=format`}

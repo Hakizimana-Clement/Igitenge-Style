@@ -46,22 +46,19 @@ export default function Cart1() {
             </p>
             <h3>Description:</h3>
             <ul>
-              <li>100% Denim</li>
-              <li>
-                100% Cotton Ankara back panel with embroidered African map
-              </li>
+              <li> Long maxi dress with halter neck</li>
+              <li>Invisible zipper on center back</li>
+              <li>Hidden Side Pockets</li>
+              <li> Unlined</li>
+              <li>Attached sash </li>
+              <li> 100% African print cotton </li>
             </ul>
             <h3>Care:</h3>
             <ul>
-              <li>Machine wash cold, tumble dry low.</li>
-            </ul>
-            <p>
-              The main color of this igitenge is yellow. <br /> The yellow color
-              in color theory says it's bring happiness.
-            </p>
-            <h3>Styles:</h3>
-            <ul>
-              <li>This style is best to wear in summer season.</li>
+              <li>
+                Hand wash separately. Use mild detergent. Do not bleach. Hang to
+                dry. Iron inside out.
+              </li>
             </ul>
           </div>
           <div className="cart-quality">

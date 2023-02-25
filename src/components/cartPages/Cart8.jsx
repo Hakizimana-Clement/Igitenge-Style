@@ -40,29 +40,32 @@ export default function Cart1() {
         <div className="col-lg-5 cart-text ">
           <div>
             <h1>Igitenge Shirt</h1>
-
             <p className="cart-price">
               <strong>Price: </strong> 100$
             </p>
             <h3>Description:</h3>
             <ul>
-              <li>100% Denim</li>
+              <li>Puff sleeve</li>
+              <li>Detachable sash at waist</li>
+              <li>Button Down from waist to skirt hem</li>
+              <li>100% Cotton Ankara</li>
               <li>
-                100% Cotton Ankara back panel with embroidered African map
+                Faux buttons from bust to waist Invisible zipper with hook and
+                eye at center back Pockets at sides
               </li>
             </ul>
             <h3>Care:</h3>
             <ul>
-              <li>Machine wash cold, tumble dry low.</li>
+              <li>Hand wash, mild detergent. Do not bleach. Hang to dry</li>
             </ul>
-            <p>
+            {/* <p>
               The main color of this igitenge is yellow. <br /> The yellow color
               in color theory says it's bring happiness.
             </p>
             <h3>Styles:</h3>
             <ul>
               <li>This style is best to wear in summer season.</li>
-            </ul>
+            </ul> */}
           </div>
           <div className="cart-quality">
             <h3>Select size:</h3>

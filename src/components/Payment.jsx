@@ -7,7 +7,7 @@ const containerStyle = {
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  margin: "3% 0 ",
+  margin: "7% 0 3% ",
 };
 
 // const paymentFormStyle = {
