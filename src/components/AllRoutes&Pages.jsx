@@ -38,10 +38,15 @@ import CheckOut from "./CheckOut";
 import NotFoundPage from "./NotFoundPage";
 import Payment from "./Payment";
 import SuccessPaymentDialog from "./SuccessPaymentDialog";
+import Test from "./Test";
+import Test2 from "./Test2";
 export default function AllRoutes() {
   return (
     <>
       <Routes>
+        <Route path="/test" element={<Test />} />
+        <Route path="/test2" element={<Test2 />} />
+
         <Route path="/" element={<AllComponents />} />
         <Route path="/blog-1" element={<Blog1 />} />
         <Route path="/blog-2" element={<Blog2 />} />

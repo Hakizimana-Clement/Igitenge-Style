@@ -1,4 +1,6 @@
 import React from "react";
+import Slide from "react-reveal/Slide";
+import Fade from "react-reveal/Fade";
 
 export default function WhoWeAre() {
   return (
@@ -13,15 +15,17 @@ export default function WhoWeAre() {
             igitenge wear to it.
           </p>
         </div>
-        <div className="col-lg-6 whoWeAre-part2">
-          <div className="whoWeAre-image">
-            <img
-              className="img-fluid"
-              src="https://images.unsplash.com/photo-1481325545291-94394fe1cf95?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=546&q=95"
-              alt="african-wax-fabric"
-            />
+        <Slide right duration={1700}>
+          <div className="col-lg-6 whoWeAre-part2">
+            <div className="whoWeAre-image">
+              <img
+                className="img-fluid"
+                src="https://images.unsplash.com/photo-1481325545291-94394fe1cf95?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=546&q=95"
+                alt="african-wax-fabric"
+              />
+            </div>
           </div>
-        </div>
+        </Slide>
       </section>
     </>
   );

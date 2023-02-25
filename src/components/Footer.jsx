@@ -47,13 +47,13 @@ SUBSCRIBE
           >
             <h2>Follow us</h2>
             <div className="footer-social-icon">
-              <a href="#">
+              <a href="#/uri">
                 <i class="fa-brands fa-instagram"></i>
               </a>
-              <a href="#">
+              <a href="#/uri">
                 <i class="fa-brands fa-twitter"></i>
               </a>
-              <a href="#">
+              <a href="#/uri">
                 <i class="fa-brands fa-facebook"></i>
               </a>
             </div>
