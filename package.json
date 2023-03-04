@@ -1,6 +1,6 @@
 {
-  "homepage": "https://Hakizimana-Clement.github.io/igitenge-style",
-  "name": "my-app",
+  "proxy":"http://localhost:4000",
+  "name": "igitenge-styles",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

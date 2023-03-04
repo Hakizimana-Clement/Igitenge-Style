@@ -649,19 +649,25 @@ hr {
   align-items: center;
   height: 82vh;
 }
-.pay {
+
+.admin {
+  background-color: rgb(153, 108, 108);
+  margin-top: 5.6%;
+}
+
+/* .pay {
   /* background-color: rgb(73, 13, 13); */
-}
-.payment-box {
-  /* background-color: red; */
-}
-.y {
-  /* background-color: red; */
-}
-.comment {
+/* } */
+/* .payment-box { */
+/* background-color: red; */
+/* } */
+/* .y { */
+/* background-color: red; */
+/* } */
+/* .comment {
   background-color: gray;
   padding: 2% 2%;
-}
+} */
 
 /* .cart-color-box button {
   width: 39px;
@@ -758,13 +764,14 @@ hr {
   .footer p {
     margin-bottom: 8%;
   }
-  /* .footer button {
+}
+/* .footer button {
   margin-top: 3%;
 } */
-  /* .btn-buy {
+/* .btn-buy {
     width: 0;
   } */
-}
+/* } */
 /* Media query for iphone 12 */
 @media (max-width: 444px) {
   .sub-main {

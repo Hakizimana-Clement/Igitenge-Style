@@ -41,10 +41,12 @@ import SuccessPaymentDialog from "./SuccessPaymentDialog";
 import Failed from "./failedPaymentDialog";
 import Test from "./Test";
 import Test2 from "./Test2";
+import Admin from "./Admin";
 export default function AllRoutes() {
   return (
     <>
       <Routes>
+        <Route path="/admin" element={<Admin />} />
         <Route path="/test" element={<Test />} />
         <Route path="/test2" element={<Test2 />} />
         <Route path="/failed" element={<Failed />} />
