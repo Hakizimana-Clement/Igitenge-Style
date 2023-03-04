@@ -38,8 +38,9 @@ body {
   background-color: #212529 !important;
   position: fixed;
   top: 0;
+  box-shadow: 0 0 4px 3px black;
   width: 100%;
-  box-shadow: 0 0 7px black;
+  /* box-shadow: 0 0 7px black; */
   z-index: 1;
   /* background-color: #180000 !important; */
 }
@@ -123,11 +124,11 @@ body {
   height: auto;
 }
 .welcoming-message {
-  background-image: url("https://www.transparenttextures.com/patterns/flowers.png");
+  /* background-image: url("https://www.transparenttextures.com/patterns/flowers.png"); */
   padding: 5%;
   color: rgba(255, 255, 255, 0.61);
   /* background-color: #631f1f; */
-  background-image: url(../src/flowers.png);
+  /* background-image: url(../src/flowers.png); */
   /* background-color: black; */
   display: flex;
   justify-content: center;
@@ -257,7 +258,7 @@ body {
   /* background-color: coral; */
   padding-top: 100px;
   background-color: #212529;
-  background-image: url(../src/components/flowers.png);
+  /* background-image: url(../src/components/flowers.png); */
   display: flex;
   /* align-items: center; */
   justify-content: center;

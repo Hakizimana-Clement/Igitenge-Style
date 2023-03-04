@@ -26,8 +26,9 @@ export default function Payment() {
   const navigate = useNavigate();
   return (
     <div style={containerStyle}>
-      <h1 className="mb-3">Payment form</h1>
+      <h1 className="mb-3">Payment Information</h1>
       <form style={formStyle}>
+        <p style={{ textAlign: "center" }}>Fill this form</p>
         <div class="mb-3">
           <label class="form-label" for="cc-number">
             Card number
