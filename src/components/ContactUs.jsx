@@ -1,6 +1,7 @@
 import React from "react";
 import LightSpeed from "react-reveal/LightSpeed";
 import Fade from "react-reveal/Fade";
+import ContactForm from "./ContactForm";
 export default function ContactUs() {
   return (
     <section>
@@ -20,44 +21,7 @@ export default function ContactUs() {
             </p>
           </div>
           <div className=" col-lg-4 ">
-            <div class="form-floating mb-3">
-              <input
-                type="text"
-                class="form-control"
-                id="floatingInput"
-                placeholder="Enter your name"
-              />
-              <label for="floatingInput">Name</label>
-            </div>
-            <div class="form-floating mb-3">
-              <input
-                type="email"
-                class="form-control"
-                id="floatingInput"
-                placeholder="name@example.com"
-              />
-              <label for="floatingInput">Email address</label>
-            </div>
-            <div class="form-floating">
-              <select class="form-select" id="floatingSelectGrid">
-                {/* <option></option> */}
-                <option selected></option>
-                <option value="1">New Ideas</option>
-                <option value="2">Refund and returns</option>
-                <option value="3">Others</option>
-              </select>
-              <label for="floatingSelectGrid">Subject</label>
-            </div>
-            <div class="form-floating">
-              <textarea
-                class="form-control"
-                placeholder="Leave a comment here"
-                id="floatingTextarea2"
-                style={{ height: 173, marginTop: 20 }}
-              ></textarea>
-              <label for="floatingTextarea2">Message</label>
-            </div>
-            <button className="btn btn-danger mt-4 mb-4">Submit</button>
+            <ContactForm />
           </div>
         </Fade>
         <Fade right duration={2800}>

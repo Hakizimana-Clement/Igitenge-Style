@@ -1,28 +1,16 @@
-import React, { useEffect, useState } from "react";
+import Review from "./Review";
+import Contacts from "./Contacts";
+import Bills from "./Bills";
+import Credit from "./Credit";
+import Email from "./Emails";
 const Admin = () => {
-  /////////////////////////// FETCH DATA FROM BACKEND /////////////////////////////////////
-  const [emails, setEmails] = useState(null);
-
-  useEffect(() => {
-    const fetchEmails = async () => {
-      const response = await fetch("/api/emails");
-      const json = await response.json();
-
-      if (response.ok) {
-        setEmails(json);
-      }
-    };
-
-    fetchEmails();
-  }, []);
-  ////////////////////////////////////////////////////////////////////////////////////////
-  // const a = 1;
   return (
     <div className="admin">
-      {/* <h1>a</h1> */}
-      {/* {emails && emails.map((email) => <p key={email._id}> {email.email}</p>)} */}
-
-      {emails && emails.map((email) => <p key={email._id}>{email.emails}</p>)}
+      <Review />
+      <Contacts />
+      <Bills />
+      <Credit />
+      <Email />
     </div>
   );
 };

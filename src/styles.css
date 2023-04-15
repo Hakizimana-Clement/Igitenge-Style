@@ -649,12 +649,27 @@ hr {
   align-items: center;
   height: 82vh;
 }
+.stripe_button {
+  /* background-color: black; */
+  /* display: flex; */
+  /* justify-content: space-between; */
+}
 
 .admin {
   background-color: rgb(153, 108, 108);
   margin-top: 5.6%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
+.buy-button {
+  width: 100%;
+}
+/* .admin h2 {
+  text-align: center;
+} */
 /* .pay {
   /* background-color: rgb(73, 13, 13); */
 /* } */
