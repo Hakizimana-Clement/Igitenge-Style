@@ -79,11 +79,11 @@ export default function Navbar() {
                   </a>
                 </li>
               </ul>
-              <button className="  btn btn-danger btn-sale  ">
-                <a href="#uri" className=" text-light text-decoration-none">
-                  Sale
-                </a>
-              </button>
+              {/* <button className="  btn btn-danger btn-sale  ">
+                  <a href="#uri" className=" text-light text-decoration-none">
+                    Donate
+                  </a>
+                </button>{" "} */}
             </div>
           </div>
         </nav>

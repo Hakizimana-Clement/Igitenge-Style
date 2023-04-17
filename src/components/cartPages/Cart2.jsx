@@ -3,7 +3,6 @@ import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
-// import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 import Footer from "../Footer";
 
 import StripeCheckout from "react-stripe-checkout";
@@ -144,7 +143,7 @@ export default function Cart1() {
             <StripeCheckout
               label="pay now"
               name="Pay with credit card "
-              stripeKey="pk_test_51MkVIDD9C3pt8rsM8cOyhiWdM2TQrDEcClKPQePKIniQdxZLEavew2rOX5OHoIzb8zLwHvDzaB2eqrlmEPnELCkX00WnRWUlaT"
+              stripeKey={`${process.env.REACT_APP_KEY}`}
               billingAddress
               shippingAddress
               amount={priceForStripe}

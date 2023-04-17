@@ -1,16 +1,17 @@
-import Review from "./Review";
 import Contacts from "./Contacts";
-import Bills from "./Bills";
-import Credit from "./Credit";
 import Email from "./Emails";
 const Admin = () => {
   return (
-    <div className="admin">
-      <Review />
-      <Contacts />
-      <Bills />
-      <Credit />
-      <Email />
+    <div className="admin container-fuild pt-4">
+      <h1>Admin Dashboard</h1>
+      <div className="row">
+        <div className="col-lg-6 contacts">
+          <Contacts />
+        </div>
+        <div className="col-lg-6 emails">
+          <Email />
+        </div>
+      </div>
     </div>
   );
 };

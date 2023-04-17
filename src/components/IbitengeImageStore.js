@@ -58,8 +58,6 @@ const ibitengeImageStore = [
     id: 12,
     img: "https://cdn.shopify.com/s/files/1/0684/2619/products/Womens-Amaka-African-Print-Stretch-Dress-Orange-Purple-Kente4_971x1371.png?v=1657732737",
     title: "Igitenge Dress",
-    // img: "https://i.pinimg.com/originals/30/61/fe/3061fe1b0cdc7596add6a04e538006e7.jpg",
-    // title: "Igitenge Suit",
   },
   {
     id: 13,

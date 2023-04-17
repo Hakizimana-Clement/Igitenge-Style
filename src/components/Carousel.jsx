@@ -1,7 +1,6 @@
 import React from "react";
 import IgitengeImages from "../CarouselImages";
 const [one, two, three] = IgitengeImages;
-// const { image1, image2, image3 } = [one, two, three];
 const { image1 } = one;
 const { image2 } = two;
 const { image3 } = three;
@@ -16,13 +15,17 @@ function Carousel() {
       >
         <div className="carousel-img carousel-inner">
           <div className="carousel-item active">
-            <img src={image1} className="img-fluid d-block w-100" alt="model" />
+            <img
+              src={image1}
+              className="img-fluid d-block w-100"
+              alt="igitenge-short-debare"
+            />
           </div>
           <div className="carousel-img carousel-item">
-            <img src={image2} className="d-block w-100" alt="model" />
+            <img src={image2} className="d-block w-100" alt="igitenge-dress" />
           </div>
           <div className="carousel-img carousel-item">
-            <img src={image3} className="d-block w-100" alt="model" />
+            <img src={image3} className="d-block w-100" alt="igitenge-shirt" />
           </div>
         </div>
       </div>

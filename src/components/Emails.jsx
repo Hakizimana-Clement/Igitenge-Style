@@ -21,7 +21,7 @@ const Email = () => {
   ////////////////////////////////////////////////
   return (
     <>
-      <h1>Email list</h1>
+      <h2>Email list</h2>
       {emails &&
         emails.map((email) => <EmailDetails key={email._id} email={email} />)}
     </>

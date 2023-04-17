@@ -154,7 +154,7 @@ export default function Cart1() {
             <StripeCheckout
               label="pay now"
               name="Pay with credit card "
-              stripeKey="pk_test_51MkVIDD9C3pt8rsM8cOyhiWdM2TQrDEcClKPQePKIniQdxZLEavew2rOX5OHoIzb8zLwHvDzaB2eqrlmEPnELCkX00WnRWUlaT"
+              stripeKey={`${process.env.REACT_APP_KEY}`}
               billingAddress
               shippingAddress
               amount={priceForStripe}

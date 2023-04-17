@@ -12,7 +12,7 @@ export default function Feature() {
           <div className="col-lg-4 col-md-4 feature-box1">
             <SearchIcon
               style={{ fontSize: 66, color: "#631f1f" }}
-              aria-label="MoneyExchangeIcon"
+              aria-label="serachIcon"
             />
             <h3>Smart size customize</h3>
             <p>Customize the size for the clothes you choose before sale it.</p>
@@ -22,7 +22,7 @@ export default function Feature() {
           <div className="col-lg-4 col-md-4 feature-box2">
             <GroupsIcon
               style={{ fontSize: 70, color: "#631f1f" }}
-              aria-label="MoneyExchangeIcon"
+              aria-label="EliteClienteleiIcon"
             />
             <h3>Elite Clientelei</h3>
             <p>
@@ -35,7 +35,7 @@ export default function Feature() {
           <div className="col-lg-4 col-md-4 feature-box3">
             <CurrencyExchangeIcon
               style={{ fontSize: 44, marginBottom: 11, color: "#631f1f" }}
-              aria-label="MoneyExchangeIcon"
+              aria-label="returnAndFunds"
             />
             <h3>Easy Returns & Exchanges</h3>
             <p>

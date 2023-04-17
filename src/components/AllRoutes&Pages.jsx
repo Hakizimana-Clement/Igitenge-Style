@@ -4,7 +4,7 @@ import AllComponents from "./AllComponents";
 import Blog1 from "./Blog1";
 import Blog2 from "./Blog2";
 import Blog3 from "./Blog3";
-import Cart1 from "./cartPages/Cart1";
+import Cart1 from "./cartPages/Cart1b";
 import Cart2 from "./cartPages/Cart2";
 import Cart3 from "./cartPages/Cart3";
 import Cart4 from "./cartPages/Cart4";
@@ -34,27 +34,27 @@ import Cart27 from "./cartPages/Cart27";
 import Cart28 from "./cartPages/Cart28";
 import Cart29 from "./cartPages/Cart29";
 import Cart30 from "./cartPages/Cart30";
-import CheckOut from "./CheckOut";
 import NotFoundPage from "./NotFoundPage";
-import Payment from "./Payment";
-import SuccessPaymentDialog from "./SuccessPaymentDialog";
-import Failed from "./failedPaymentDialog";
-import Test2 from "./Test2";
-import Test1 from "./Test1";
 import Admin from "./Admin";
 export default function AllRoutes() {
   return (
     <>
       <Routes>
+        {/* admin */}
         <Route path="/admin" element={<Admin />} />
-        <Route path="/test2" element={<Test2 />} />
-        <Route path="/test1" element={<Test1 />} />
-        <Route path="/failed" element={<Failed />} />
+
+        {/* Home */}
 
         <Route path="/" element={<AllComponents />} />
+
+        {/* Blog routes */}
+
         <Route path="/blog-1" element={<Blog1 />} />
         <Route path="/blog-2" element={<Blog2 />} />
         <Route path="/blog-3" element={<Blog3 />} />
+
+        {/* All carts */}
+
         <Route path="/cart-1" element={<Cart1 />} />
         <Route path="/cart-2" element={<Cart2 />} />
         <Route path="/cart-3" element={<Cart3 />} />
@@ -86,240 +86,6 @@ export default function AllRoutes() {
         <Route path="/cart-29" element={<Cart29 />} />
         <Route path="/cart-30" element={<Cart30 />} />
 
-        {/* cart 1 */}
-        <Route path="/cart-1/checkout" element={<CheckOut />} />
-        <Route path="/cart-1/checkout/payment" element={<Payment />} />
-        <Route
-          path="/cart-1/checkout/payment/success"
-          element={<SuccessPaymentDialog />}
-        />
-        {/* cart 2 */}
-        <Route path="/cart-2/checkout" element={<CheckOut />} />
-        <Route path="/cart-2/checkout/payment" element={<Payment />} />
-        <Route
-          path="/cart-2/checkout/payment/success"
-          element={<SuccessPaymentDialog />}
-        />
-        {/* cart 3 */}
-        <Route path="/cart-3/checkout" element={<CheckOut />} />
-        <Route path="/cart-3/checkout/payment" element={<Payment />} />
-        <Route
-          path="/cart-3/checkout/payment/success"
-          element={<SuccessPaymentDialog />}
-        />
-        {/* cart 4 */}
-        <Route path="/cart-4/checkout" element={<CheckOut />} />
-        <Route path="/cart-4/checkout/payment" element={<Payment />} />
-        <Route
-          path="/cart-4/checkout/payment/success"
-          element={<SuccessPaymentDialog />}
-        />
-        {/* cart 5 */}
-        <Route path="/cart-5/checkout" element={<CheckOut />} />
-        <Route path="/cart-5/checkout/payment" element={<Payment />} />
-        <Route
-          path="/cart-5/checkout/payment/success"
-          element={<SuccessPaymentDialog />}
-        />
-        {/* cart 6 */}
-        <Route path="/cart-6/checkout" element={<CheckOut />} />
-        <Route path="/cart-6/checkout/payment" element={<Payment />} />
-        <Route
-          path="/cart-6/checkout/payment/success"
-          element={<SuccessPaymentDialog />}
-        />
-        {/* cart 7 */}
-        <Route path="/cart-7/checkout" element={<CheckOut />} />
-        <Route path="/cart-7/checkout/payment" element={<Payment />} />
-        <Route
-          path="/cart-7/checkout/payment/success"
-          element={<SuccessPaymentDialog />}
-        />
-        {/* cart 8 */}
-        <Route path="/cart-8/checkout" element={<CheckOut />} />
-        <Route path="/cart-8/checkout/payment" element={<Payment />} />
-        <Route
-          path="/cart-8/checkout/payment/success"
-          element={<SuccessPaymentDialog />}
-        />
-        {/* cart 9 */}
-        <Route path="/cart-9/checkout" element={<CheckOut />} />
-        <Route path="/cart-9/checkout/payment" element={<Payment />} />
-        <Route
-          path="/cart-9/checkout/payment/success"
-          element={<SuccessPaymentDialog />}
-        />
-        {/* cart 8 */}
-        <Route path="/cart-8/checkout" element={<CheckOut />} />
-        <Route path="/cart-8/checkout/payment" element={<Payment />} />
-        <Route
-          path="/cart-8/checkout/payment/success"
-          element={<SuccessPaymentDialog />}
-        />
-        {/* cart 9 */}
-        <Route path="/cart-9/checkout" element={<CheckOut />} />
-        <Route path="/cart-9/checkout/payment" element={<Payment />} />
-        <Route
-          path="/cart-9/checkout/payment/success"
-          element={<SuccessPaymentDialog />}
-        />
-        {/* cart 10 */}
-        <Route path="/cart-10/checkout" element={<CheckOut />} />
-        <Route path="/cart-10/checkout/payment" element={<Payment />} />
-        <Route
-          path="/cart-10/checkout/payment/success"
-          element={<SuccessPaymentDialog />}
-        />
-        {/* cart 11 */}
-        <Route path="/cart-11/checkout" element={<CheckOut />} />
-        <Route path="/cart-11/checkout/payment" element={<Payment />} />
-        <Route
-          path="/cart-11/checkout/payment/success"
-          element={<SuccessPaymentDialog />}
-        />
-        {/* cart 12 */}
-        <Route path="/cart-12/checkout" element={<CheckOut />} />
-        <Route path="/cart-12/checkout/payment" element={<Payment />} />
-        <Route
-          path="/cart-12/checkout/payment/success"
-          element={<SuccessPaymentDialog />}
-        />
-        {/* cart 13 */}
-        <Route path="/cart-13/checkout" element={<CheckOut />} />
-        <Route path="/cart-13/checkout/payment" element={<Payment />} />
-        <Route
-          path="/cart-13/checkout/payment/success"
-          element={<SuccessPaymentDialog />}
-        />
-        {/* cart 14 */}
-        <Route path="/cart-14/checkout" element={<CheckOut />} />
-        <Route path="/cart-14/checkout/payment" element={<Payment />} />
-        <Route
-          path="/cart-14/checkout/payment/success"
-          element={<SuccessPaymentDialog />}
-        />
-        {/* cart 15 */}
-        <Route path="/cart-15/checkout" element={<CheckOut />} />
-        <Route path="/cart-15/checkout/payment" element={<Payment />} />
-        <Route
-          path="/cart-15/checkout/payment/success"
-          element={<SuccessPaymentDialog />}
-        />
-        {/* cart 16 */}
-        <Route path="/cart-16/checkout" element={<CheckOut />} />
-        <Route path="/cart-16/checkout/payment" element={<Payment />} />
-        <Route
-          path="/cart-16/checkout/payment/success"
-          element={<SuccessPaymentDialog />}
-        />
-        {/* cart 17 */}
-        <Route path="/cart-17/checkout" element={<CheckOut />} />
-        <Route path="/cart-17/checkout/payment" element={<Payment />} />
-        <Route
-          path="/cart-17/checkout/payment/success"
-          element={<SuccessPaymentDialog />}
-        />
-        {/* cart 18 */}
-        <Route path="/cart-18/checkout" element={<CheckOut />} />
-        <Route path="/cart-18/checkout/payment" element={<Payment />} />
-        <Route
-          path="/cart-18/checkout/payment/success"
-          element={<SuccessPaymentDialog />}
-        />
-        {/* cart 19 */}
-        <Route path="/cart-19/checkout" element={<CheckOut />} />
-        <Route path="/cart-19/checkout/payment" element={<Payment />} />
-        <Route
-          path="/cart-19/checkout/payment/success"
-          element={<SuccessPaymentDialog />}
-        />
-        {/* cart 20 */}
-        <Route path="/cart-20/checkout" element={<CheckOut />} />
-        <Route path="/cart-20/checkout/payment" element={<Payment />} />
-        <Route
-          path="/cart-20/checkout/payment/success"
-          element={<SuccessPaymentDialog />}
-        />
-        {/* cart 21 */}
-        <Route path="/cart-21/checkout" element={<CheckOut />} />
-        <Route path="/cart-21/checkout/payment" element={<Payment />} />
-        <Route
-          path="/cart-21/checkout/payment/success"
-          element={<SuccessPaymentDialog />}
-        />
-        {/* cart 21 */}
-        <Route path="/cart-21/checkout" element={<CheckOut />} />
-        <Route path="/cart-21/checkout/payment" element={<Payment />} />
-        <Route
-          path="/cart-21/checkout/payment/success"
-          element={<SuccessPaymentDialog />}
-        />
-        {/* cart 22 */}
-        <Route path="/cart-22/checkout" element={<CheckOut />} />
-        <Route path="/cart-22/checkout/payment" element={<Payment />} />
-        <Route
-          path="/cart-22/checkout/payment/success"
-          element={<SuccessPaymentDialog />}
-        />
-        {/* cart 23 */}
-        <Route path="/cart-23/checkout" element={<CheckOut />} />
-        <Route path="/cart-23/checkout/payment" element={<Payment />} />
-        <Route
-          path="/cart-23/checkout/payment/success"
-          element={<SuccessPaymentDialog />}
-        />
-        {/* cart 24 */}
-        <Route path="/cart-24/checkout" element={<CheckOut />} />
-        <Route path="/cart-24/checkout/payment" element={<Payment />} />
-        <Route
-          path="/cart-24/checkout/payment/success"
-          element={<SuccessPaymentDialog />}
-        />
-        {/* cart 25 */}
-        <Route path="/cart-25/checkout" element={<CheckOut />} />
-        <Route path="/cart-25/checkout/payment" element={<Payment />} />
-        <Route
-          path="/cart-25/checkout/payment/success"
-          element={<SuccessPaymentDialog />}
-        />
-        {/* cart 26 */}
-        <Route path="/cart-26/checkout" element={<CheckOut />} />
-        <Route path="/cart-26/checkout/payment" element={<Payment />} />
-        <Route
-          path="/cart-26/checkout/payment/success"
-          element={<SuccessPaymentDialog />}
-        />
-        {/* cart 27 */}
-        <Route path="/cart-27/checkout" element={<CheckOut />} />
-        <Route path="/cart-27/checkout/payment" element={<Payment />} />
-        <Route
-          path="/cart-27/checkout/payment/success"
-          element={<SuccessPaymentDialog />}
-        />
-        {/* cart 28 */}
-        <Route path="/cart-28/checkout" element={<CheckOut />} />
-        <Route path="/cart-28/checkout/payment" element={<Payment />} />
-        <Route
-          path="/cart-28/checkout/payment/success"
-          element={<SuccessPaymentDialog />}
-        />
-        {/* cart 29 */}
-        <Route path="/cart-29/checkout" element={<CheckOut />} />
-        <Route path="/cart-29/checkout/payment" element={<Payment />} />
-        <Route
-          path="/cart-29/checkout/payment/success"
-          element={<SuccessPaymentDialog />}
-        />
-        {/* cart 30 */}
-        <Route path="/cart-30/checkout" element={<CheckOut />} />
-        <Route path="/cart-30/checkout/payment" element={<Payment />} />
-        <Route
-          path="/cart-30/checkout/payment/success"
-          element={<SuccessPaymentDialog />}
-        />
-        {/* <Route path="/about" element={<AboutUs />} /> */}
-        {/* <Route path="/contact" element={<ContactUs />} /> */}
-        <Route path="/sale" element={<Cart10 />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </>

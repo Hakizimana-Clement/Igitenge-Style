@@ -8,10 +8,9 @@ import DialogContentText from "@mui/material/DialogContentText";
 import Alert from "@mui/material/Alert";
 export default function AlertDialog() {
   const [open, setOpen] = React.useState(false);
-
-  // const handleClickOpen = () => {
-  //   setOpen(true);
-  // };
+  React.useEffect(() => {
+    setOpen(true);
+  }, []);
 
   const handleClose = () => {
     setOpen(false);
@@ -31,10 +30,10 @@ export default function AlertDialog() {
             <Alert severity="info">
               <h5>This is an info alert — check it out!</h5>
               <p>
-                The images used on this website are from{" "}
+                The images used on this website are from
                 <a href="https://www.diyanu.com/">www.diyanu.com </a>
                 and are not owned by us. Their use on this site is solely for
-                <strong> educational </strong> and{" "}
+                <strong> educational </strong> and
                 <strong> learning purposes</strong>, and we do not claim any
                 ownership or copyright over them.
               </p>

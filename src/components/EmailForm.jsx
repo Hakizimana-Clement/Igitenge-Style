@@ -41,6 +41,7 @@ const EmailFrom = () => {
           placeholder=" Email Address"
           aria-label=" Email Address"
           aria-describedby="basic-addon2"
+          value={email}
         />
         <button type="submit" className="btn btn-danger ml-3">
           SUBSCRIBE

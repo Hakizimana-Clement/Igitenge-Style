@@ -12,6 +12,13 @@ export const emailsReducer = (state, action) => {
       return {
         emails: [action.type, ...state.emails],
       };
+    case "DELETE_CONTACT":
+      return {
+        emails: state.emails.filter(
+          (email) => email._id !== action.payload._id
+        ),
+      };
+
     default:
       return state;
   }

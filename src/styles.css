@@ -1,21 +1,7 @@
-:root {
-  --body_background: white !important;
-  --body-color: black !important;
-  --link_color: navy;
-}
-
-[data-theme="dark"] {
-  --body_background: #282c34;
-  --body-color: white !important;
-  --link_color: cyane;
-}
-
 * {
   transition: all 0.3s ease-in-out;
 }
 body {
-  /* background-image: url("https://www.transparenttextures.com/patterns/fabric-of-squares.png"); */
-  /* background-color: #212529; */
   background-color: var(--body_background);
   background-image: url("https://www.transparenttextures.com/patterns/flowers.png");
 }
@@ -31,9 +17,6 @@ body {
   z-index: 1;
 }
 
-.nav-link:hover {
-  color: #dc3545;
-}
 .navbar.active {
   background-color: #212529 !important;
   position: fixed;
@@ -47,6 +30,12 @@ body {
 .navbar.active a {
   color: white;
   /* color: white; */
+}
+.navbar.active a:hover {
+  color: #dc3545;
+}
+.nav-link:hover {
+  color: #dc3545;
 }
 .navbar.active .btn-sale {
   /* background-color: black; */
@@ -643,30 +632,40 @@ hr {
   color: #8b2727;
 }
 .notFoundPage {
-  /* background-color: red; */
   display: flex;
   justify-content: center;
   align-items: center;
   height: 82vh;
 }
-.stripe_button {
-  /* background-color: black; */
-  /* display: flex; */
-  /* justify-content: space-between; */
+
+.admin h1:nth-of-type(1) {
+  background-color: black;
+  text-align: center;
+  color: white;
+  padding: 1.2rem 0;
+}
+.admin {
+  background-color: rgb(6 51 41 / 48%);
+  margin-top: 3.6%;
 }
 
-.admin {
-  background-color: rgb(153, 108, 108);
-  margin-top: 5.6%;
+.emails {
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
+}
+.contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .buy-button {
   width: 100%;
 }
+
 /* .admin h2 {
   text-align: center;
 } */

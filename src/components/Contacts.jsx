@@ -17,6 +17,7 @@ const Contacts = () => {
   ///////////////////////////////////////////////////////
   return (
     <>
+      <h2>Contacts List:</h2>
       {contacts &&
         contacts.map((contact) => (
           <ContactsDetails key={contact._id} contact={contact} />

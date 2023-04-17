@@ -27,7 +27,7 @@ export default function Card() {
     <>
       <ThemeProvider theme={theme}>
         <Box
-          className="t"
+          // className="t"
           sx={{
             display: "grid",
             gap: 2,
@@ -45,8 +45,9 @@ export default function Card() {
         >
           {itemData.map((item) => (
             <Fade bottom distance="50%">
-              <ImageListItem key={item.img}>
+              <ImageListItem key={item.id}>
                 <img
+                  key={item.id}
                   src={`${item.img}?w=248&fit=crop&auto=format`}
                   srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
                   alt={item.title}

@@ -3,9 +3,8 @@ import Radio from "@mui/material/Radio";
 import RadioGroup from "@mui/material/RadioGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import FormControl from "@mui/material/FormControl";
-// import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
-import Footer from "../Footer";
 import StripeCheckout from "react-stripe-checkout";
+import Footer from "../Footer";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 const MySwal = withReactContent(Swal);
@@ -15,14 +14,11 @@ export default function Cart1() {
 
   const [count, setCount] = useState(startingNumber);
 
-  const [countNow, setCountNow] = useState(300);
-
   function handleAddClick(e) {
     e.preventDefault();
     const addOne = count + 1;
     setCount(addOne);
-    const addPriceOne = addOne * 300;
-    setCountNow(addPriceOne);
+    const addPriceOne = addOne * 100;
     console.log(addPriceOne);
     console.log(addOne);
   }
@@ -34,8 +30,7 @@ export default function Cart1() {
     } else {
       const minusOne = count - 1;
       setCount(minusOne);
-      const minusPriceOne = minusOne * 300;
-      setCountNow(minusPriceOne);
+      const minusPriceOne = minusOne * 100;
       console.log(minusPriceOne);
     }
     console.log(count - 1);
@@ -57,7 +52,7 @@ export default function Cart1() {
     });
   };
   ////////////////////////////////////////////
-  const priceForStripe = count * 30000;
+  const priceForStripe = count * 10000;
   const payNow = async (token) => {
     try {
       const response = await fetch("/api/payment/cart1", {
@@ -80,13 +75,14 @@ export default function Cart1() {
       handleFailure();
     }
   };
+
   return (
     <>
       <div className="row cart">
         <div className="col-lg-7">
           <div className="cart-image">
             <img
-              src="https://cdn.shopify.com/s/files/1/0684/2619/products/Womens-Aniyah-African-Print-Shirt-Dress-Light-Blue-Pink-Iris-close2_1000x1400.jpg?v=1648670782"
+              src="https://cdn.shopify.com/s/files/1/0684/2619/products/Chane-Mens-African-Print-Shirt-1_2000x2000.jpg?v=1668456797"
               alt="placeholder"
               className="img-fluid"
             />
@@ -94,28 +90,25 @@ export default function Cart1() {
         </div>
         <div className="col-lg-5 cart-text ">
           <div>
-            <h1>Igitenge Dress</h1>
+            <h1>Igitenge shirt</h1>
 
             <p className="cart-price">
-              <strong>Price: </strong> 300$
+              <strong>Price: </strong> <span>100$</span>
             </p>
             <h3>Description:</h3>
             <ul>
-              <li>Notch collar</li>
-              <li>Button-up</li>
-              <li>2 buttons at cuff</li>
-              <li>Detachable sash at waist</li>
-              <li>2 pockets at sides</li>
-              <li>Curved hem</li>
-              <li>100% Cotton Ankara</li>
-              <li>Can be worn as a top, dress, or light jacket</li>
+              <li>Button-Up Shirt</li>
+              <li>Pocket on Wearer's Left Side</li>
+              <li>Curved Hem</li>
+              <li>100% Cotton Ankara Body</li>
+              <li>
+                97% Cotton/ 3% Lycra Poplin Contrast Fabric at the Welt Pocket,
+                Hidden Placket and the Inner Sleeve Cuff
+              </li>
             </ul>
             <h3>Care:</h3>
             <ul>
-              <li>
-                Hand wash separately. Use mild detergent. Do not bleach. Hang to
-                dry. Iron inside out.
-              </li>
+              <li>Dry clean only.</li>
             </ul>
           </div>
           <div className="cart-quality">
@@ -125,21 +118,16 @@ export default function Cart1() {
                 row
                 defaultValue="XS"
                 aria-labelledby="demo-row-radio-buttons-group-label"
-                name="row-radio-buttons-group"
+                name="size"
+                type="submit"
               >
                 <FormControlLabel value="XS" control={<Radio />} label="XS" />
                 <FormControlLabel value="S" control={<Radio />} label="S" />
                 <FormControlLabel value="M" control={<Radio />} label="M" />
                 <FormControlLabel value="L" control={<Radio />} label="L" />
-                <FormControlLabel
-                  value="XL"
-                  control={<Radio />}
-                  label="XL"
-                  color="danger"
-                />
+                <FormControlLabel value="XL" control={<Radio />} label="XL" />
               </RadioGroup>
             </FormControl>
-
             <div>
               <h3>Quantity:</h3>
               <div className="cart-quality-button">
@@ -157,7 +145,7 @@ export default function Cart1() {
               billingAddress
               shippingAddress
               amount={priceForStripe}
-              description={`Your Total is $ ${countNow}`}
+              description={`Your Total is $ ${count}00`}
               token={payNow}
             >
               <button className="btn btn-dark btn-lg buy-button">
@@ -167,7 +155,6 @@ export default function Cart1() {
           </div>
         </div>
       </div>
-      {/* <Comment /> */}
       <Footer />
     </>
   );
