@@ -5,7 +5,9 @@ const Contacts = () => {
   const [contacts, setContacts] = useState(null);
   useEffect(() => {
     const fetchContacts = async () => {
-      const response = await fetch("/api/contacts");
+      const response = await fetch(
+        `${process.env.REACT_APP_BACKEND_URL}/api/contacts`
+      );
       const json = await response.json();
 
       if (response.ok) {

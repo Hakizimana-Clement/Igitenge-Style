@@ -3,9 +3,12 @@ import { useEmailsContext } from "../hooks/useEmailsContext";
 const EmailDetails = ({ email }) => {
   const { dispatch } = useEmailsContext();
   const handleClick = async () => {
-    const response = await fetch("/api/emails/" + email._id, {
-      method: "DELETE",
-    });
+    const response = await fetch(
+      `${process.env.REACT_APP_BACKEND_URL}/api/emails/` + email._id,
+      {
+        method: "DELETE",
+      }
+    );
 
     const json = await response.json();
 

@@ -13,13 +13,16 @@ const ContactForm = () => {
 
     const contacts = { name, email, message };
 
-    const response = await fetch("/api/contacts", {
-      method: "POST",
-      body: JSON.stringify(contacts),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    const response = await fetch(
+      `${process.env.REACT_APP_BACKEND_URL}/api/contacts`,
+      {
+        method: "POST",
+        body: JSON.stringify(contacts),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
 
     const json = await response.json();
 

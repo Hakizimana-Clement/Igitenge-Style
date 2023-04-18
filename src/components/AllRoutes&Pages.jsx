@@ -4,7 +4,7 @@ import AllComponents from "./AllComponents";
 import Blog1 from "./Blog1";
 import Blog2 from "./Blog2";
 import Blog3 from "./Blog3";
-import Cart1 from "./cartPages/Cart1b";
+import Cart1 from "./cartPages/Cart1";
 import Cart2 from "./cartPages/Cart2";
 import Cart3 from "./cartPages/Cart3";
 import Cart4 from "./cartPages/Cart4";

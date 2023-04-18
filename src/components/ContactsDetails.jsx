@@ -3,9 +3,12 @@ import { useEmailsContext } from "../hooks/useEmailsContext";
 export default function ContactsDetails({ contact }) {
   const { dispatch } = useEmailsContext();
   const handleClick = async () => {
-    const response = await fetch("/api/contacts/" + contact._id, {
-      method: "DELETE",
-    });
+    const response = await fetch(
+      `${process.env.REACT_APP_BACKEND_URL}/api/contacts/` + contact._id,
+      {
+        method: "DELETE",
+      }
+    );
 
     const json = await response.json();
 

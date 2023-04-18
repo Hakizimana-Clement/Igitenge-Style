@@ -10,13 +10,16 @@ const EmailFrom = () => {
 
     const emails = { email };
 
-    const response = await fetch("/api/emails", {
-      method: "POST",
-      body: JSON.stringify(emails),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    const response = await fetch(
+      `${process.env.REACT_APP_BACKEND_URL}/api/emails`,
+      {
+        method: "POST",
+        body: JSON.stringify(emails),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
 
     const json = await response.json();
     if (!response.ok) {

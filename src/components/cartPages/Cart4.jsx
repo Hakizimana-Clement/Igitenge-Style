@@ -57,16 +57,19 @@ export default function Cart1() {
   const priceForStripe = count * 25000;
   const payNow = async (token) => {
     try {
-      const response = await fetch("/api/payment/cart1", {
-        method: "POST",
-        body: {
-          amount: count * 10000,
-          token,
-        },
-        headers: {
-          "Content-Type": "application",
-        },
-      });
+      const response = await fetch(
+        `${process.env.REACT_APP_BACKEND_URL}/api/payment/cart1`,
+        {
+          method: "POST",
+          body: {
+            amount: count * 10000,
+            token,
+          },
+          headers: {
+            "Content-Type": "application",
+          },
+        }
+      );
 
       if (response.ok) {
         handleSuccess();

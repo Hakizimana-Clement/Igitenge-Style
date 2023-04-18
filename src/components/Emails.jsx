@@ -7,7 +7,9 @@ const Email = () => {
   //////////////// DATA FETCH ////////////////////
   useEffect(() => {
     const fetchEmail = async () => {
-      const response = await fetch("/api/emails");
+      const response = await fetch(
+        `${process.env.REACT_APP_BACKEND_URL}/api/emails`
+      );
       const json = await response.json();
 
       if (response.ok) {
