@@ -665,7 +665,9 @@ hr {
 .buy-button {
   width: 100%;
 }
-
+.stripe {
+  margin: 15% 5%;
+}
 /* .admin h2 {
   text-align: center;
 } */

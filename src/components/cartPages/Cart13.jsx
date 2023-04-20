@@ -14,12 +14,14 @@ export default function Cart1() {
   let startingNumber = 1;
 
   const [count, setCount] = useState(startingNumber);
+  const [countNow, setCountNow] = useState(100);
 
   function handleAddClick(e) {
     e.preventDefault();
     const addOne = count + 1;
     setCount(addOne);
     const addPriceOne = addOne * 100;
+    setCountNow(addPriceOne);
     console.log(addPriceOne);
     console.log(addOne);
   }
@@ -32,6 +34,7 @@ export default function Cart1() {
       const minusOne = count - 1;
       setCount(minusOne);
       const minusPriceOne = minusOne * 100;
+      setCountNow(minusPriceOne);
       console.log(minusPriceOne);
     }
     console.log(count - 1);
@@ -57,19 +60,18 @@ export default function Cart1() {
   const payNow = async (token) => {
     try {
       const response = await fetch(
-        `${process.env.REACT_APP_BACKEND_URL}/api/payment/cart1`,
+        `${process.env.REACT_APP_BACKEND_URL}/payment`,
         {
           method: "POST",
-          body: {
-            amount: count * 10000,
+          body: JSON.stringify({
+            amount: countNow * 100,
             token,
-          },
+          }),
           headers: {
-            "Content-Type": "application",
+            "Content-Type": "application/json",
           },
         }
       );
-
       if (response.ok) {
         handleSuccess();
         console.log("successfully");
@@ -113,14 +115,6 @@ export default function Cart1() {
             <ul>
               <li>Dry clean only.</li>
             </ul>
-            {/* <p>
-              The main color of this igitenge is yellow. <br /> The yellow color
-              in color theory says it's bring happiness.
-            </p>
-            <h3>Styles:</h3>
-            <ul>
-              <li>This style is best to wear in summer season.</li>
-            </ul> */}
           </div>
           <div className="cart-quality">
             <h3>Select size:</h3>
@@ -161,7 +155,7 @@ export default function Cart1() {
               billingAddress
               shippingAddress
               amount={priceForStripe}
-              description={`Your Total is $ ${count}00`}
+              description={`Your Total is $ ${countNow}`}
               token={payNow}
             >
               <button className="btn btn-dark btn-lg buy-button">

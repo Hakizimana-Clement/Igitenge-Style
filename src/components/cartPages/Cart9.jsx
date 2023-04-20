@@ -61,15 +61,15 @@ export default function Cart1() {
   const payNow = async (token) => {
     try {
       const response = await fetch(
-        `${process.env.REACT_APP_BACKEND_URL}/api/payment/cart1`,
+        `${process.env.REACT_APP_BACKEND_URL}/payment`,
         {
           method: "POST",
-          body: {
-            amount: count * 10000,
+          body: JSON.stringify({
+            amount: countNow * 100,
             token,
-          },
+          }),
           headers: {
-            "Content-Type": "application",
+            "Content-Type": "application/json",
           },
         }
       );

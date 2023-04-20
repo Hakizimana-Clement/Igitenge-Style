@@ -60,19 +60,18 @@ export default function Cart1() {
   const payNow = async (token) => {
     try {
       const response = await fetch(
-        `${process.env.REACT_APP_BACKEND_URL}/api/payment/cart1`,
+        `${process.env.REACT_APP_BACKEND_URL}/payment`,
         {
           method: "POST",
-          body: {
-            amount: count * 10000,
+          body: JSON.stringify({
+            amount: countNow * 100,
             token,
-          },
+          }),
           headers: {
-            "Content-Type": "application",
+            "Content-Type": "application/json",
           },
         }
       );
-
       if (response.ok) {
         handleSuccess();
         console.log("successfully");
@@ -115,14 +114,6 @@ export default function Cart1() {
                 dry.
               </li>
             </ul>
-            {/* <p>
-              The main color of this igitenge is yellow. <br /> The yellow color
-              in color theory says it's bring happiness.
-            </p>
-            <h3>Styles:</h3>
-            <ul>
-              <li>This style is best to wear in summer season.</li>
-            </ul> */}
           </div>
           <div className="cart-quality">
             <h3>Select size:</h3>

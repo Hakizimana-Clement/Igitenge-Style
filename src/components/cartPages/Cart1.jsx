@@ -13,12 +13,14 @@ export default function Cart1() {
   let startingNumber = 1;
 
   const [count, setCount] = useState(startingNumber);
+  const [countNow, setCountNow] = useState(100);
 
   function handleAddClick(e) {
     e.preventDefault();
     const addOne = count + 1;
     setCount(addOne);
     const addPriceOne = addOne * 100;
+    setCountNow(addPriceOne);
     console.log(addPriceOne);
     console.log(addOne);
   }
@@ -31,6 +33,7 @@ export default function Cart1() {
       const minusOne = count - 1;
       setCount(minusOne);
       const minusPriceOne = minusOne * 100;
+      setCountNow(minusPriceOne);
       console.log(minusPriceOne);
     }
     console.log(count - 1);
@@ -41,14 +44,14 @@ export default function Cart1() {
     MySwal.fire({
       icon: "success",
       title: "Payment was successful",
-      timer: "2000",
+      time: "1000",
     });
   };
   const handleFailure = () => {
     MySwal.fire({
       icon: "error",
       title: "Payment was not successful",
-      timer: "2000",
+      time: "1000",
     });
   };
   ////////////////////////////////////////////
@@ -56,15 +59,15 @@ export default function Cart1() {
   const payNow = async (token) => {
     try {
       const response = await fetch(
-        `${process.env.REACT_APP_BACKEND_URL}/api/payment/cart1`,
+        `${process.env.REACT_APP_BACKEND_URL}/payment`,
         {
           method: "POST",
-          body: {
-            amount: count * 10000,
+          body: JSON.stringify({
+            amount: countNow * 100,
             token,
-          },
+          }),
           headers: {
-            "Content-Type": "application",
+            "Content-Type": "application/json",
           },
         }
       );
@@ -79,6 +82,7 @@ export default function Cart1() {
     }
   };
 
+  console.log(countNow);
   return (
     <>
       <div className="row cart">
@@ -148,7 +152,7 @@ export default function Cart1() {
               billingAddress
               shippingAddress
               amount={priceForStripe}
-              description={`Your Total is $ ${count}00`}
+              description={`Your Total is $ ${countNow}`}
               token={payNow}
             >
               <button className="btn btn-dark btn-lg buy-button">
