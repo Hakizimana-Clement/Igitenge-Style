@@ -11,12 +11,12 @@ export default function AllComponents() {
   return (
     <>
       <Header />
-      <Feature />
-      <WhoWeAre />
+      {/* <Feature /> */}
+      {/* <WhoWeAre /> */}
       <Products />
-      <Blog />
-      <AboutUs />
-      <ContactUs />
+      {/* <Blog /> */}
+      {/* <AboutUs /> */}
+      {/* <ContactUs /> */}
       <Footer />
     </>
   );

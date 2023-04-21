@@ -665,8 +665,33 @@ hr {
 .buy-button {
   width: 100%;
 }
-.stripe {
-  margin: 15% 5%;
+/* .try {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: space-between;
+  justify-content: space-around;
+} */
+
+/* .try {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+} */
+/* .try {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+} */
+
+.try {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
 }
 /* .admin h2 {
   text-align: center;

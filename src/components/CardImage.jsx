@@ -27,7 +27,6 @@ export default function Card() {
     <>
       <ThemeProvider theme={theme}>
         <Box
-          // className="t"
           sx={{
             display: "grid",
             gap: 2,
@@ -54,9 +53,26 @@ export default function Card() {
                   loading="lazy"
                 />
                 <CardContent className="cardContent">
-                  <Typography gutterBottom variant="h5" component="div">
-                    {item.title}
-                  </Typography>
+                  <div className="try bg-dark">
+                    <Typography
+                      gutterBottom
+                      variant="h5"
+                      component="div"
+                      // fontSize={20}
+                    >
+                      <span>Name:</span>
+                      {item.title}
+                    </Typography>
+                    <Typography
+                      gutterBottom
+                      variant="h5"
+                      component="div"
+                      fontSize={19}
+                    >
+                      <span>Price: </span>
+                      {item.price}
+                    </Typography>
+                  </div>
                   <button
                     onClick={() => {
                       if (item.id === 1) {
