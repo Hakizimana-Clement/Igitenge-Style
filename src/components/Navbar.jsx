@@ -59,14 +59,14 @@ export default function Navbar() {
                     Products
                   </a>
                 </li>
-                <li className="nav-item">
+                {/* <li className="nav-item">
                   <a className="nav-link " aria-current="page" href="#blog">
                     Blog
                   </a>
-                </li>
+                </li> */}
                 <li className="nav-item">
                   <a className="nav-link " aria-current="page" href="#aboutUs">
-                    About Us
+                    About
                   </a>
                 </li>
                 <li className="nav-item">
@@ -75,7 +75,7 @@ export default function Navbar() {
                     aria-current="page"
                     href="#contactUs"
                   >
-                    Contact Us
+                    Contact
                   </a>
                 </li>
               </ul>

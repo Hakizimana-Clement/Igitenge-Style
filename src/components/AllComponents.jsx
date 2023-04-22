@@ -15,8 +15,8 @@ export default function AllComponents() {
       {/* <WhoWeAre /> */}
       <Products />
       {/* <Blog /> */}
-      {/* <AboutUs /> */}
-      {/* <ContactUs /> */}
+      <AboutUs />
+      <ContactUs />
       <Footer />
     </>
   );
