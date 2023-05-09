@@ -36,13 +36,18 @@ import Cart29 from "./cartPages/Cart29";
 import Cart30 from "./cartPages/Cart30";
 import NotFoundPage from "./NotFoundPage";
 import Admin from "./Admin";
-
+import Success from "../pages/success";
+import Cancel from "../pages/cancel";
 export default function AllRoutes() {
   return (
     <>
       <Routes>
         {/* admin */}
+
         <Route path="/admin" element={<Admin />} />
+        {/* success and cancel  */}
+        <Route path="/success" element={<Success />} />
+        <Route path="/cancel" element={<Cancel />} />
 
         {/* Home */}
 

@@ -6,7 +6,7 @@ import ImageListItem, {
 import { CardContent } from "@mui/material";
 import { Typography } from "@mui/material";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
-import itemData from "./IbitengeImageStore";
+import { ibitengeImageStore } from "./IbitengeImageStore";
 import { useNavigate } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 
@@ -42,7 +42,7 @@ export default function Card() {
             },
           }}
         >
-          {itemData.map((item) => (
+          {ibitengeImageStore.map((item) => (
             <Fade bottom distance="50%">
               <ImageListItem key={item.id}>
                 <img

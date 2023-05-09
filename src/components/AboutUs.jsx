@@ -2,7 +2,7 @@ import React from "react";
 import Fade from "react-reveal/Fade";
 export default function AboutUs() {
   return (
-    <section className="row About-content" id="aboutUs">
+    <section className="row About-content " id="aboutUs">
       <Fade left>
         <div className="col-lg-6 about-message">
           <h1>About us</h1>
