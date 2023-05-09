@@ -61,7 +61,7 @@ function ProductCard(props) {
               </> */}
             {/* ) : ( */}
             <Button className="w-100" onClick={handleShow}>
-              Add To Cart
+              View Details
             </Button>
             <Modal sm="lg" show={show} onHide={handleClose}>
               <Modal.Header closeButton>
