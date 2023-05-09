@@ -693,6 +693,11 @@ hr {
   flex-wrap: wrap;
   align-items: center;
 }
+.modal-content {
+  /* background-color: #2c0000; */
+  width: 65vw;
+  margin-left: -37%;
+}
 /* .admin h2 {
   text-align: center;
 } */

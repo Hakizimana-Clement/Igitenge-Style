@@ -27,7 +27,7 @@ export default function Navbar() {
 
   // send data to server
   const checkout = async () => {
-    await fetch("http://localhost:8080/checkout", {
+    await fetch(`${process.env.REACT_APP_BACKEND_URL}/checkout`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -211,7 +211,7 @@ export default function Navbar() {
                 Total: ${cart.getTotalCost().toFixed(2)}
               </div>
               <Button variant="success" onClick={checkout}>
-                Checkout! 🛒
+                Checkout!
               </Button>
             </Stack>
           ) : (
