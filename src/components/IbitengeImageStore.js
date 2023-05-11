@@ -19,7 +19,7 @@ const ibitengeImageStore = [
     care: "Dry clean only.",
   },
   {
-    id: "price_1N5YbBD9C3pt8rsMFv6cZB6h",
+    id: "price_1N6URzD9C3pt8rsMkdFuxvUq",
     img: "https://cdn.shopify.com/s/files/1/0684/2619/products/Mens-Chane-African-Print-Button-Up-Natural-Mudcloth_971x1371.png?v=1662061001",
     title: "Ryan shirt",
     price: 100,
@@ -29,7 +29,7 @@ const ibitengeImageStore = [
     care: "Machine wash cold with like colors. Line Dry or dry clean. Warm Iron if needed.",
   },
   {
-    id: "price_1N5YcoD9C3pt8rsMOtwG7seB",
+    id: "price_1N6UVKD9C3pt8rsMQ2W7wgg8",
     img: "https://cdn.shopify.com/s/files/1/0684/2619/products/Womens-Akinyi-Blouse-Black-Maroon-Paisley3_971x1371.jpg?v=1664389903",
     title: "Gina blouse",
     price: 200,
@@ -129,7 +129,7 @@ const ibitengeImageStore = [
     care: "Use mild detergent. Do not bleach. Wash & iron inside out.",
   },
   {
-    id: "price_1N5l3hD9C3pt8rsMo5ppjUdM",
+    id: "price_1N6UNlD9C3pt8rsMcxQCCOFq",
     img: "https://i.pinimg.com/originals/07/6c/67/076c677e1c13c46fe136a3991f7c97a8.jpg",
     title: "Logan shirt",
     price: 100,
