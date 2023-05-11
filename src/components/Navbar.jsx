@@ -27,7 +27,7 @@ export default function Navbar() {
 
   // send data to server
   const checkout = async () => {
-    await fetch(`${process.env.REACT_APP_BACKEND_URL}`, {
+    await fetch(`${process.env.REACT_APP_BACKEND_URL}/checkout`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -55,7 +55,7 @@ export default function Navbar() {
       <nav
         className={
           navBar
-            ? "navbar active navbar-expand-lg"
+            ? "navbar active navbar-expand-lg navbar-dark"
             : "navbar navbar-expand-lg navbar-dark bg-dark nav-background"
         }
       >
