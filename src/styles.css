@@ -37,11 +37,18 @@ body {
 .nav-link:hover {
   color: #dc3545;
 }
-.navbar.active .btn-sale {
-  /* background-color: black; */
-  /* color: red; */
-  /* color: white; */
+
+.nav-button {
+  /* background-color: gold; */
+  width: "6rem";
+  height: "2.5rem";
 }
+/* .navbar.active .btn-sale { */
+
+/* background-color: black; */
+/* color: red; */
+/* color: white; */
+/* } */
 /* .active {
 
   color: #dc3545 !important;
@@ -631,11 +638,15 @@ hr {
   font-size: 22px;
   color: #8b2727;
 }
-.notFoundPage {
+.page {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 82vh;
+}
+
+.page h1 {
+  text-align: center;
 }
 
 .admin h1:nth-of-type(1) {
@@ -693,10 +704,55 @@ hr {
   flex-wrap: wrap;
   align-items: center;
 }
-.modal-content {
-  /* background-color: #2c0000; */
-  width: 65vw;
+/* .modal-content { */
+/* background-color: #2c0000; */
+/* width: 65vw;
   margin-left: -37%;
+} */
+
+/* .modalClassImg {
+  width: 29vw;
+} */
+
+.modal-content {
+  display: flex;
+  justify-content: center;
+  width: 66vw;
+  margin-left: -34%;
+}
+.modalClass {
+  display: flex;
+  justify-content: center;
+  /* width: 100%; */
+  /* margin-left: -37%; */
+  /* align-items: center; */
+}
+.modalClassImg {
+  width: 29vw;
+  display: flex;
+  justify-content: center;
+  /* width: 55vw; */
+}
+
+.svg-icon {
+  width: 1.5rem;
+}
+.size-button button {
+  background-color: #de8708;
+  color: #ffff;
+}
+
+.size-button button:hover {
+  background-color: #ff9700;
+  color: black;
+}
+
+.product-details {
+  margin-top: 1rem;
+}
+
+.product-details h1 {
+  margin-bottom: 5%;
 }
 /* .admin h2 {
   text-align: center;
@@ -772,7 +828,7 @@ hr {
 /* } */
 /* ################################# MEDIA QUERY ########################## */
 /* Media query for ipad*/
-@media (max-width: 800px) {
+@media (max-width: 820px) {
   /* this is button navbar menu */
   .btn-sale {
     width: 60px;
@@ -810,6 +866,17 @@ hr {
   .footer p {
     margin-bottom: 8%;
   }
+  .modal-content {
+    margin: 0;
+  }
+  .modalClass {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+  }
+  .modalClassImg {
+    width: 55vw;
+  }
 }
 /* .footer button {
   margin-top: 3%;
@@ -818,7 +885,17 @@ hr {
     width: 0;
   } */
 /* } */
+
+/* @media (max-width: 821px) {
+  .modal-content {
+    /* width: 65vw; */
+/* margin-left: 0; */
+/* } */
+/* } */
+
+/* /////////////////////////////////////////////////////////////////// */
 /* Media query for iphone 12 */
+/* /////////////////////////////////////////////////////////////////// */
 @media (max-width: 444px) {
   .sub-main {
     margin: 19% 0 0;
@@ -920,6 +997,21 @@ hr {
   }
   .footer-coypright {
     font-size: 12px;
+  }
+  .modal-content {
+    margin-left: 10%;
+    /* background-color: brown; */
+  }
+
+  .nav-button {
+    width: 20%;
+    background-color: gray;
+    height: 10%;
+    /* display: flex; */
+    /* flex-direction: row-reverse; */
+  }
+  .svg-icon {
+    width: 43%;
   }
 }
 /* @media only screen and (min-width: 800px) {

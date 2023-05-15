@@ -1,7 +1,8 @@
 import React, { useState, useContext } from "react";
-import { Button, Modal, Offcanvas, Stack } from "react-bootstrap";
+import { Button, Offcanvas, Stack } from "react-bootstrap";
 import { CartContext } from "../context/CardContext";
 import CardProduct from "./CardProduct";
+
 export default function Navbar() {
   // for modal
   const [show, setShow] = useState(false);
@@ -26,6 +27,35 @@ export default function Navbar() {
   window.addEventListener("scroll", changeBackground);
 
   // send data to server
+  // const checkout = async () => {
+  //   try {
+  //     // Use await instead of then to avoid nesting and improve readability
+  //     const response = await fetch(
+  //       `${process.env.REACT_APP_BACKEND_URL}/checkout`,
+  //       {
+  //         method: "POST",
+  //         headers: {
+  //           "Content-Type": "application/json",
+  //         },
+  //         body: JSON.stringify({ items: cart.items }),
+  //       }
+  //     );
+  //     // Check if the response is ok before parsing it as json
+  //     if (response.ok) {
+  //       const data = await response.json();
+  //       if (data.url) {
+  //         window.location.assign(data.url); // Forwarding user to Stripe
+  //       }
+  //     } else {
+  //       // Handle errors
+  //       console.error(response.status, response.statusText);
+  //     }
+  //   } catch (error) {
+  //     // Catch any network or parsing errors
+  //     console.error(error);
+  //   }
+  // };
+
   const checkout = async () => {
     await fetch(`${process.env.REACT_APP_BACKEND_URL}/checkout`, {
       method: "POST",
@@ -51,7 +81,6 @@ export default function Navbar() {
   );
   return (
     <>
-      {/* <nav className="navbar active navbar-expand-lg navbar-dark bg-dark nav-background"> */}
       <nav
         className={
           navBar
@@ -106,53 +135,6 @@ export default function Navbar() {
                 </a>
               </li>
             </ul>
-            <button
-              className="btn btn-danger "
-              style={{ width: "6rem", height: "2.5rem" }}
-              onClick={handleShow}
-            >
-              <svg
-                fill="#ffffff"
-                version="1.1"
-                id="Capa_1"
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 904.86 902.86"
-                style={{ width: "43%" }}
-              >
-                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
-                <g
-                  id="SVGRepo_tracerCarrier"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                ></g>
-                <g id="SVGRepo_iconCarrier">
-                  {" "}
-                  <g>
-                    {" "}
-                    <g>
-                      {" "}
-                      <path d="M671.504,577.829l110.485-432.609H902.86v-68H729.174L703.128,179.2L0,178.697l74.753,399.129h596.751V577.829z M685.766,247.188l-67.077,262.64H131.199L81.928,246.756L685.766,247.188z"></path>{" "}
-                      <path d="M578.418,825.641c59.961,0,108.743-48.783,108.743-108.744s-48.782-108.742-108.743-108.742H168.717 c-59.961,0-108.744,48.781-108.744,108.742s48.782,108.744,108.744,108.744c59.962,0,108.743-48.783,108.743-108.744 c0-14.4-2.821-28.152-7.927-40.742h208.069c-5.107,12.59-7.928,26.342-7.928,40.742 C469.675,776.858,518.457,825.641,578.418,825.641z M209.46,716.897c0,22.467-18.277,40.744-40.743,40.744 c-22.466,0-40.744-18.277-40.744-40.744c0-22.465,18.277-40.742,40.744-40.742C191.183,676.155,209.46,694.432,209.46,716.897z M619.162,716.897c0,22.467-18.277,40.744-40.743,40.744s-40.743-18.277-40.743-40.744c0-22.465,18.277-40.742,40.743-40.742 S619.162,694.432,619.162,716.897z"></path>{" "}
-                    </g>{" "}
-                  </g>{" "}
-                </g>
-              </svg>
-              <div
-                className="d-flex justify-content-center align-items-center"
-                style={{
-                  color: "white",
-                  width: "1.5rem",
-                  height: "1.5rem",
-                  position: "absolute",
-                  bottom: "0",
-                  right: "0",
-                  transform: "translate(-33px, -36px)",
-                }}
-              >
-                {productsCount > 0 ? productsCount : null}
-                {/* {productsCount} */}
-              </div>
-            </button>
             {/* <Button
               style={{ width: "6rem", height: "2.5rem" }}
               variant="danger"
@@ -198,6 +180,73 @@ export default function Navbar() {
                 5
               </div>
             </Button> */}
+
+            <button
+              className="btn btn-outline-danger nav-button"
+              style={{ position: "relative" }}
+              // style={{ width: "6rem", height: "2.5rem" }}
+              onClick={handleShow}
+            >
+              <svg
+                fill="#ffffff"
+                version="1.1"
+                id="Capa_1"
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 904.86 902.86"
+                // style={{ width: "43%" }}
+                className="svg-icon"
+              >
+                <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+                <g
+                  id="SVGRepo_tracerCarrier"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                ></g>
+                <g id="SVGRepo_iconCarrier">
+                  {" "}
+                  <g>
+                    {" "}
+                    <g>
+                      {" "}
+                      <path d="M671.504,577.829l110.485-432.609H902.86v-68H729.174L703.128,179.2L0,178.697l74.753,399.129h596.751V577.829z M685.766,247.188l-67.077,262.64H131.199L81.928,246.756L685.766,247.188z"></path>{" "}
+                      <path d="M578.418,825.641c59.961,0,108.743-48.783,108.743-108.744s-48.782-108.742-108.743-108.742H168.717 c-59.961,0-108.744,48.781-108.744,108.742s48.782,108.744,108.744,108.744c59.962,0,108.743-48.783,108.743-108.744 c0-14.4-2.821-28.152-7.927-40.742h208.069c-5.107,12.59-7.928,26.342-7.928,40.742 C469.675,776.858,518.457,825.641,578.418,825.641z M209.46,716.897c0,22.467-18.277,40.744-40.743,40.744 c-22.466,0-40.744-18.277-40.744-40.744c0-22.465,18.277-40.742,40.744-40.742C191.183,676.155,209.46,694.432,209.46,716.897z M619.162,716.897c0,22.467-18.277,40.744-40.743,40.744s-40.743-18.277-40.743-40.744c0-22.465,18.277-40.742,40.743-40.742 S619.162,694.432,619.162,716.897z"></path>{" "}
+                    </g>{" "}
+                  </g>{" "}
+                </g>
+              </svg>
+              {productsCount > 0 ? (
+                <div
+                  className="rounded-circle text-white d-flex justify-content-center align-items-center"
+                  style={{
+                    width: "1.5rem",
+                    height: "1.5rem",
+                    position: "absolute",
+                    bottom: 0,
+                    right: 0,
+                    transform: "translate(51%,-100%)",
+                    backgroundColor: "#4C7D93",
+                  }}
+                >
+                  {productsCount}
+                </div>
+              ) : null}
+              {/* {productsCount > 0 ? productsCount : null} */}
+              {/* <div
+                className="d-flex justify-content-center align-items-center"
+                style={{
+                  color: "white",
+                  width: "1.5rem",
+                  height: "1.5rem",
+                  position: "absolute",
+                  bottom: "0",
+                  right: "0",
+                  transform: "translate(-33px, -36px)",
+                }}
+              >
+                {productsCount > 0 ? productsCount : null}
+              </div> */}
+              {/* {productsCount} */}
+            </button>
           </div>
         </div>
       </nav>
@@ -229,7 +278,6 @@ export default function Navbar() {
           )}
         </Modal.Body>
       </Modal> */}
-
       <Offcanvas show={show} onHide={handleClose} placement="end">
         <Offcanvas.Header closeButton>
           <Offcanvas.Title>Cart</Offcanvas.Title>
@@ -244,7 +292,6 @@ export default function Navbar() {
                   quantity={currentProduct.quantity}
                 />
               ))}
-
               <div className="ms-auto fw-bold fs-5">
                 Total: ${cart.getTotalCost().toFixed(2)}
               </div>

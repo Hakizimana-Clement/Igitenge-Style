@@ -1,12 +1,10 @@
 import { createContext, useState } from "react";
-import {
-  ibitengeImageStore,
-  getProductData,
-} from "../components/IbitengeImageStore";
+import { getProductData } from "../components/IbitengeImageStore";
 
 export const CartContext = createContext({
   items: [],
   getProductQuantity: () => {},
+  getProductSize: () => {},
   addOneToCart: () => {},
   removeOneToCart: () => {},
   deleteFromCart: () => {},
@@ -24,6 +22,17 @@ export function CartProvider({ children }) {
 
     if (quantity === undefined) {
       return 0;
+    }
+
+    return quantity;
+  }
+  function getProductSize(id) {
+    const quantity = cartProducts.find(
+      (product) => product.id === id
+    )?.quantity;
+
+    if (quantity === undefined) {
+      return null;
     }
 
     return quantity;
@@ -85,6 +94,7 @@ export function CartProvider({ children }) {
   const contextValue = {
     items: cartProducts,
     getProductQuantity,
+    getProductSize,
     addOneToCart,
     removeOneToCart,
     deleteFromCart,

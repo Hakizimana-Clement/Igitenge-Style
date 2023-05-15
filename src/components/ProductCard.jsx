@@ -1,6 +1,9 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useState, useEffect } from "react";
 import { Card, Button, Modal } from "react-bootstrap";
 import { CartContext } from "../context/CardContext";
+import Carousel from "react-bootstrap/Carousel";
+import { Skeleton } from "@mui/material";
+
 function ProductCard(props) {
   const product = props.product;
   const cart = useContext(CartContext);
@@ -9,6 +12,15 @@ function ProductCard(props) {
   const [show, setShow] = useState(false);
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+
+  // loading skeleton
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 5000);
+  }, []);
   return (
     <>
       <Card className="h-100">
@@ -95,37 +107,97 @@ function ProductCard(props) {
               </Button>
             )}
             <Modal sm="lg" show={show} onHide={handleClose}>
-              <Modal.Header closeButton>
-                {/* <h1>{product.title}</h1> */}
-              </Modal.Header>
+              <Modal.Header closeButton></Modal.Header>
               <Modal.Body>
                 <div className="row">
-                  <div className="col-lg-6">
-                    <img
-                      src={product.img}
-                      alt={product.title}
-                      style={{ width: "29vw" }}
-                    />
+                  <div className="col-lg-6 modalClass">
+                    <Carousel fade controls={true}>
+                      <Carousel.Item>
+                        {loading ? (
+                          <Skeleton
+                            variant="rectangular"
+                            width={421}
+                            height={590}
+                            animation="wave"
+                          />
+                        ) : (
+                          <img
+                            className="d-block w-100"
+                            src={product.img}
+                            alt={product.title}
+                          />
+                        )}
+                        {/* <Skeleton variant="circular" width={40} height={40} /> <Skeleton variant="text" />
+                        <Skeleton
+                          variant="rectangular"
+                          width={421}
+                          height={590}
+                          animation="wave"
+                        /> */}
+                      </Carousel.Item>
+                      <Carousel.Item>
+                        {loading ? (
+                          <Skeleton
+                            variant="rectangular"
+                            width={421}
+                            height={590}
+                            animation="wave"
+                          />
+                        ) : (
+                          <img
+                            className="d-block w-100"
+                            src={product.img2}
+                            alt={product.title}
+                          />
+                        )}
+                      </Carousel.Item>
+                      <Carousel.Item>
+                        {loading ? (
+                          <Skeleton
+                            variant="rectangular"
+                            width={421}
+                            height={590}
+                            animation="wave"
+                          />
+                        ) : (
+                          <img
+                            className="d-block w-100"
+                            src={product.img3}
+                            alt={product.title}
+                          />
+                        )}
+                      </Carousel.Item>
+                    </Carousel>
                   </div>
                   <div className="col-lg-6 ">
-                    <div>
+                    <div className="product-details">
                       <h1>{product.title}</h1>
+                      <hr />
                       <h4>Description:</h4>
 
                       <ul>
                         <li>{product.description1}</li>
                         <li>{product.description2}</li>
                       </ul>
+
                       <h4>Care:</h4>
                       <ul>
                         <li>{product.care}</li>
                       </ul>
                     </div>
+                    <div className="mb-4 size-button">
+                      <h4 className="mb-3">Select the size:</h4>
+                      <button className="rounded me-2">X</button>
+                      <button className="rounded me-2">XL</button>
+                      <button className="rounded me-2">M</button>
+                      <button className="rounded me-2">L</button>
+                      <button className="rounded me-2">XL</button>
+                    </div>
 
                     {productQuantity > 0 ? (
                       <>
                         <div
-                          className="d-flex align-items-center flex-column"
+                          className="d-flex align-items-center flex-column mb-3"
                           style={{ gap: ".5rem" }}
                         >
                           <div
@@ -160,7 +232,7 @@ function ProductCard(props) {
                       </>
                     ) : (
                       <Button
-                        className="w-100"
+                        className="w-100 mt-3"
                         onClick={() => cart.addOneToCart(product.id)}
                         variant="dark"
                       >

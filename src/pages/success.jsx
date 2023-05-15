@@ -2,8 +2,8 @@ import React from "react";
 
 export default function Success() {
   return (
-    <div className="notFoundPage">
-      <h1>Payment successfully</h1>✅
+    <div className="page">
+      <h1>✅ Thank you for your purchase!</h1>
     </div>
   );
 }
