@@ -13,7 +13,6 @@ body {
   position: fixed;
   top: 0;
   width: 100%;
-  /* box-shadow: 0 0 7px black; */
   z-index: 1;
 }
 
@@ -23,13 +22,10 @@ body {
   top: 0;
   box-shadow: 0 0 4px 3px black;
   width: 100%;
-  /* box-shadow: 0 0 7px black; */
   z-index: 1;
-  /* background-color: #180000 !important; */
 }
 .navbar.active a {
   color: white;
-  /* color: white; */
 }
 .navbar.active a:hover {
   color: #dc3545;
@@ -39,41 +35,13 @@ body {
 }
 
 .nav-button {
-  /* background-color: gold; */
   width: "6rem";
   height: "2.5rem";
 }
-/* .navbar.active .btn-sale { */
-
-/* background-color: black; */
-/* color: red; */
-/* color: white; */
-/* } */
-/* .active {
-
-  color: #dc3545 !important;
-} */
-/* .nav-link:hover {
-  color: #dc3545 !important;
-} */
-
-/* .NavLink {
-  color: #dc3545;
-} */
-/* .btn-sale:hover {
-  background-color: black;
-  color: red;
-} */
-/* .nav-background {
-  background-image: url("https://www.transparenttextures.com/patterns/flowers.png");
-  background-color: #ffffff; 
-   background-color: rgba(2, 240, 240, 0.11);
-  } */
 .navigation-Spacing {
   padding: 10px 26px;
 }
 .wlcm {
-  /* background-color: rgb(40, 24, 56); */
   background-color: #212529;
 }
 
@@ -111,21 +79,13 @@ body {
 }
 /******************* SUB MAIN  ****************/
 .sub-main {
-  /* margin-top: 18%; */
   margin: 5.6% 0 0;
-  /* margin-top: 5.6%; */
-  /* background-color: #212529; */
   background-color: #631f1f;
-  /* background-color: rgb(40, 16, 65); */
   height: auto;
 }
 .welcoming-message {
-  /* background-image: url("https://www.transparenttextures.com/patterns/flowers.png"); */
   padding: 5%;
   color: rgba(255, 255, 255, 0.61);
-  /* background-color: #631f1f; */
-  /* background-image: url(../src/flowers.png); */
-  /* background-color: black; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -136,65 +96,30 @@ body {
   font-size: 25px;
   margin-top: 1%;
 }
-/* .welcoming-message::after {
-  /* background-image: url("https://www.transparenttextures.com/patterns/flowers.png"); */
-/* background-color: #631f1f; */
-/* } */
 .welcoming-message h1 {
   color: white;
-  /* padding-top: 19%; */
   font-size: 5rem;
-  /* display: flex;
-  justify-content: flex-start;
-  align-items: center; */
 }
 
-/* blockquote {
-  color: white;
-} */
-/* .carousel-img {
-  max-width: 100%;
-  border-radius: 50%;
-  height: auto;
-  overflow: hidden;
-} */
 /* coursel-section */
 .coursel-section {
-  /* max-width: 100%; */
-  /* height: auto; */
   width: 100%;
-  /* height: 591px; */
-  /* overflow: hidden; */
-  /* overflow-y: hidden; */
 }
 
 /******************* FEATURE SECTION ****************/
-
-.container-fluid {
-  /* padding: 0; */
-  /* margin: 0; */
-}
 .feature-box {
   margin: 90px 0 0 15px;
   background-color: white;
-  /* background-image: url("https://www.transparenttextures.com/patterns/flowers.png"); */
-  /* background-color: #0f4142; */
-  /* background-color: #0f4142; */
   padding: 3%;
-  /* color: white; */
-  /* background-color: hotpink; */
 }
 .feature-box1,
 .feature-box2,
 .feature-box3 {
   display: flex;
   justify-content: center;
-  /* flex-wrap: wrap; */
   align-items: center;
   flex-direction: column;
   flex-wrap: wrap;
-  /* background-color: bisque; */
-  /* padding: 0 30%; */
 }
 .feature-box h3 {
   text-align: center;
@@ -207,12 +132,10 @@ body {
 /******************* MAIN SECTION (GATEGORIES) ****************/
 .Gategories-section {
   background-color: rgb(66, 40, 1);
-  /* gap: 13rem; */
 }
 .card-image {
   background-color: darkgreen;
   display: flex;
-  /* justify-content: center; */
   align-items: center;
   padding: 30px;
 }
@@ -222,8 +145,6 @@ body {
   background-color: #631f54;
 }
 .box11 {
-  /* position: relative;
-  top: 80px; */
   margin-top: 160px;
   width: 140px;
   height: 140px;
@@ -237,83 +158,42 @@ body {
 .box11 img {
   width: 100%;
 }
-
-/* .box2 {
-  width: 300px;
-  height: 300px;
-  background-color: #1f4d63;
-}
-.box3 {
-  width: 300px;
-  height: 300px;
-  background-color: #261f63;
-} */
-
 /******************* GATEGORIES SECTION ****************/
 .try {
-  /* background-color: coral; */
   padding-top: 100px;
   background-color: #212529;
-  /* background-image: url(../src/components/flowers.png); */
   display: flex;
-  /* align-items: center; */
   justify-content: center;
   flex-direction: column;
   padding: 0 5%;
-  /* flex-wrap: wrap; */
 }
-/* h2 {
-  font-size: 3rem;
-  padding: 30px;
-  color: white;
-  text-align: center;
-  /* background-color: aquamarine; */
-/* } */
-/* .categories-heading {
-  font-size: 1px;
-  color: white;
-} */
 /******************* WHO WE ARE ****************/
 .whoWeAre {
-  /* background-color: gray; */
   background-color: white;
-  /* margin: 0; */
-  /* margin: 90px 0; */
   margin: 90px 0 0 15px;
 }
 .whoWeAre-image {
   width: 97%;
   height: 300px;
-  /* height: 2%; */
-  /* background-color: blueviolet; */
 }
 .whoWeAre-image img {
   width: 100%;
-  /* border-radius: 15px; */
 }
 .whoWeAre-part1 {
-  /* background-color: bisque; */
   padding: 7% 2% 0;
-  /* display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column; */
-  /* padding: 40px 36px 10px; */
-  /* width: ; */
 }
 .whoWeAre-part2 {
   display: flex;
   justify-content: center;
   align-items: flex-start;
   overflow: hidden;
-  /* margin: 90px 0 0 15px; */
   margin: 15px 0;
 }
 
-.whoWeAre-image {
-  /* width: 100%; */
-  /* height: 100%; */
-}
+/* .whoWeAre-image { */
+/* width: 100%; */
+/* height: 100%; */
+/* } */
 .whoWeAre h1 {
   color: #8b2727;
   font-size: 47px;
@@ -321,29 +201,20 @@ body {
 .whoWeAre p {
   font-size: 18px;
   padding-top: 2%;
-  /* padding: 2% 43px; */
 }
 
 /******************* PRODUCT SECTION ****************/
 .products {
-  /* background-color: darkgoldenrod */
-  /* background-image: url("https://www.transparenttextures.com/patterns/flowers.png"); */
   background-color: white;
   padding: 2% 10% 5%;
-  /* margin: 90px 0; */
   margin: 90px 0 0 15px;
 }
 .products h1 {
   font-size: 43px;
-  /* padding-left: 25px; */
   text-align: center;
-  /* padding-bottom: 17px; */
   color: #8b2727;
   padding: 3% 0;
 }
-/* .t {
-  height: 50%;
-} */
 /******************* card section *************/
 .Card {
   display: flex;
@@ -353,44 +224,17 @@ body {
 .cardText {
   padding-top: 50px;
 }
-/* .card {
-  height: 100px;
-  width: 100px;
-} */
 .cardContent {
-  /* background-color: #2f454d; */
   background-color: #1e221f;
   text-align: center;
   color: white;
 }
-/* .btn-buy { */
-/* width: 42%; */
-/* border: 2px solid black;
-  border-radius: 5px;
-  background-color: white;
-  color: black;
-  padding: 6px 0px;
-  font-size: 16px;
-  cursor: pointer; */
-/* } */
-/* 
-.btn-buy:hover {
-  border-color: #04aa6d;
-  color: green;
-  background-color: rgb(32, 25, 25);
-} */
 
 /******************* Blog SECTION ****************/
 .blog-section {
-  /* background-color: burlywood; */
   background-color: white;
   padding: 2% 10%;
-  /* margin: 90px 0; */
   margin: 90px 15px;
-  /* box-shadow: 0 0 1px black; */
-  /* display: flex;
-  justify-content: center;
-  flex-direction: column; */
 }
 
 .blog-section h1 {
@@ -401,12 +245,9 @@ body {
 
 .blog-box {
   padding: 0 80px;
-  /* padding-left: 100px; */
 }
 .blog-button {
-  /* padding-left: 0; */
   padding: 10px 0 !important;
-  /* background-color: grey; */
 }
 
 .blog-button p {
@@ -423,24 +264,18 @@ body {
 .About-content {
   background-color: white;
   padding: 1% 4%;
-  /* margin: 90px 0; */
   margin: 90px 15px;
-  /* box-shadow: 0 0 10px black; */
 }
 .about-image img {
-  /* width: 50%; */
-  /* max-width: 50%; */
   border-radius: 15px;
   width: 100%;
 }
 .about-message {
-  /* background-color: darkslategrey; */
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .about-message h1 {
-  /* font-size: 3.52rem; */
   font-size: 46px;
   margin-bottom: 6%;
   color: #8b2727;
@@ -448,8 +283,6 @@ body {
 
 /******************* CONTACT SECTION ****************/
 .contact {
-  /* background-color: #1e221f;
-  color: #eee; */
   background-color: white;
   color: black;
   margin: 0;
@@ -466,13 +299,7 @@ body {
   padding: 3% 0;
   color: #8b2727;
 }
-/* .contact-image {
-  display: flex;
-  justify-content: center;
-} */
 .contact-image img {
-  /* max-width: 100%; */
-  /* max-height: 80%; */
   width: 100%;
   height: 80%;
   object-fit: cover;
@@ -498,25 +325,17 @@ body {
   margin-bottom: 10%;
 }
 .footer-newsLetter {
-  /* display: flex; */
-  /* flex-direction: column; */
-  /* align-items: center; */
   padding-bottom: 15px;
 }
 .footer h2 {
   margin-bottom: 4%;
 }
 
-/* .footer button {
-  margin-top: 3%;
-} */
 .footer-social-icon {
-  /* background-color: #631f54; */
   font-size: 20px;
 }
 
 .footer-social-icon i {
-  /* padding: 0 5%; */
   padding-right: 12%;
   color: rgb(255, 255, 255);
 }
@@ -524,27 +343,20 @@ body {
 .footer-social-icon i:hover {
   color: #af3b3b;
 }
-/* .footer-newsLetter input {
-  padding-right: 104px;
-} */
 .input-group {
   padding-right: 24%;
 }
 hr {
-  /* margin: 18px 0; */
   margin: 5% 0 1% !important;
   border: 2px rgb(255, 0, 0) solid;
 }
 .footer-coypright {
   text-align: center;
-  /* padding-top: 1%; */
 }
 
 /******************* NEWS BLOG SECTION ****************/
 .article-wrapper {
   background-color: black;
-  /* padding: 8.5%; */
-  /* width: 100%; */
 }
 
 .article-wrapper img {
@@ -556,7 +368,6 @@ hr {
 .article-text {
   width: 80%;
   margin: auto;
-  /* background-color: rgb(138, 138, 138); */
 }
 .article-news {
   background-color: white;
@@ -579,7 +390,6 @@ hr {
 }
 .article-wrapper img {
   height: 70vh;
-  /* margin: 10px 0; */
 }
 
 .bag-image {
@@ -588,35 +398,29 @@ hr {
 
 /******************* CART SECTION ****************/
 .cart {
-  /* background-color: grey; */
   margin: 5.6% 0 0;
 }
 .cart-image {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* padding: 13% 0 9%; */
-  /* gap: 2%; */
 }
 .cart-text {
-  /* background-color: goldenrod; */
-  /* background-color: white; */
   padding: 5% 1% 3% 3%;
 }
 
 .cart-text h1 {
   margin: 0 0 7%;
 }
-.cart-quality {
-  /* background-color: white; */
-}
+/* .cart-quality { */
+/* background-color: white; */
+/* } */
 
 .cart-quality-button {
   border: 1px black solid;
-  display: inline-flex;
   align-items: center;
+  display: inline-flex;
   background-color: white;
-  /* width: 13%; */
 }
 
 .cart-quality-button button {
@@ -676,27 +480,6 @@ hr {
 .buy-button {
   width: 100%;
 }
-/* .try {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  align-content: space-between;
-  justify-content: space-around;
-} */
-
-/* .try {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  flex-wrap: wrap;
-} */
-/* .try {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-} */
-
 .try {
   display: flex;
   flex-direction: row;
@@ -704,15 +487,6 @@ hr {
   flex-wrap: wrap;
   align-items: center;
 }
-/* .modal-content { */
-/* background-color: #2c0000; */
-/* width: 65vw;
-  margin-left: -37%;
-} */
-
-/* .modalClassImg {
-  width: 29vw;
-} */
 
 .modal-content {
   display: flex;
@@ -723,15 +497,11 @@ hr {
 .modalClass {
   display: flex;
   justify-content: center;
-  /* width: 100%; */
-  /* margin-left: -37%; */
-  /* align-items: center; */
 }
 .modalClassImg {
   width: 29vw;
   display: flex;
   justify-content: center;
-  /* width: 55vw; */
 }
 
 .svg-icon {
@@ -754,78 +524,6 @@ hr {
 .product-details h1 {
   margin-bottom: 5%;
 }
-/* .admin h2 {
-  text-align: center;
-} */
-/* .pay {
-  /* background-color: rgb(73, 13, 13); */
-/* } */
-/* .payment-box { */
-/* background-color: red; */
-/* } */
-/* .y { */
-/* background-color: red; */
-/* } */
-/* .comment {
-  background-color: gray;
-  padding: 2% 2%;
-} */
-
-/* .cart-color-box button {
-  width: 39px;
-  background-color: white;
-  height: 32px;
-  margin-right: 23px;
-}
-.red-box {
-  border: 3px solid yellow;
-} */
-/* .cart-color-box {
-  width: 100px;
-  height: 100px;
-  background-color: #631f1f;
-} */
-/* ==================== DIALOG SECTION ============== */
-/* .dialog-content { */
-/* background-color: rgb(128, 128, 128); */
-/* padding: 40px 0 0; */
-/* padding-top: 20px; */
-/* height: 100vh; */
-/* width: 100vw; */
-/* } */
-
-/* .dialog-content-text {
-  background-color: #7ab388;
-}
-.dialog-content-text input {
-  width: 25%;
-  display: flex;
-}
-.dialog-content-text .input-control {
-  display: flex;
-  justify-content: space-between;
-  padding: 5% 0;
-}
-.dialog-content-text button {
-  display: block;
-  float: right;
-} */
-/* ==================== END ============== */
-/* .popUp-main {
-  background-color: rgb(77, 0, 0);
-  height: 100%;
-  width: 100%;
-  z-index: 1;
-} */
-
-/* .bloogg-button {
-  padding-left: 0 !important;
-} */
-/* .blog-content {
-  /* padding-left: 500px; */
-/* background-color: rgb(135, 197, 226); */
-/* padding: 100%; */
-/* } */
 /* ################################# MEDIA QUERY ########################## */
 /* Media query for ipad*/
 @media (max-width: 820px) {
@@ -872,27 +570,11 @@ hr {
   .modalClass {
     display: flex;
     justify-content: center;
-    /* align-items: center; */
   }
   .modalClassImg {
     width: 55vw;
   }
 }
-/* .footer button {
-  margin-top: 3%;
-} */
-/* .btn-buy {
-    width: 0;
-  } */
-/* } */
-
-/* @media (max-width: 821px) {
-  .modal-content {
-    /* width: 65vw; */
-/* margin-left: 0; */
-/* } */
-/* } */
-
 /* /////////////////////////////////////////////////////////////////// */
 /* Media query for iphone 12 */
 /* /////////////////////////////////////////////////////////////////// */
@@ -1000,22 +682,13 @@ hr {
   }
   .modal-content {
     margin-left: 10%;
-    /* background-color: brown; */
   }
 
   .nav-button {
     width: 20%;
-    background-color: gray;
     height: 10%;
-    /* display: flex; */
-    /* flex-direction: row-reverse; */
   }
   .svg-icon {
     width: 43%;
   }
 }
-/* @media only screen and (min-width: 800px) {
-  .contact-image {
-    display: none;
-  }
-} */

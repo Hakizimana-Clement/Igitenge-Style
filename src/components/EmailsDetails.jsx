@@ -31,23 +31,6 @@ const EmailDetails = ({ email }) => {
           </button>
         </div>
       </div>
-      {/* 
-      <div>
-        <table>
-          <tr>
-            <th>Emails</th>
-            <th>Delete</th>
-          </tr>
-          <tr>
-            <td>{email.email}</td>
-            <td>
-              <button className="btn btn-outline-dark" onClick={handleClick}>
-                Delete
-              </button>
-            </td>
-          </tr>
-        </table>
-      </div> */}
     </>
   );
 };

@@ -36,37 +36,6 @@ function ProductCard(props) {
             <span className="ms-2 text-muted">${product.price}</span>
           </Card.Title>
           <div className="mt-auto">
-            {/* {productQuantity > 0 ? (
-              <>
-                <div
-                  className="d-flex align-items-center flex-column"
-                  style={{ gap: ".5rem" }}
-                >
-                  <div
-                    className="d-flex align-items-center justify-content-center"
-                    style={{ gap: ".5rem" }}
-                  >
-                    <Button onClick={() => cart.removeOneToCart(product.id)}>
-                      -
-                    </Button>
-                    <div>
-                      <span className="fs-3">{productQuantity} </span>
-                      in the cart
-                    </div>
-                    <Button onClick={() => cart.addOneToCart(product.id)}>
-                      +
-                    </Button>
-                  </div>
-                  <Button
-                    variant="danger"
-                    size="sm"
-                    onClick={() => cart.deleteFromCart(product.id)}
-                  >
-                    Remove
-                  </Button>
-                </div>
-              </> */}
-            {/* ) : ( */}
             {productQuantity > 0 ? (
               <Button
                 className="w-100 d-flex justify-content-center align-items-center"
@@ -111,7 +80,7 @@ function ProductCard(props) {
               <Modal.Body>
                 <div className="row">
                   <div className="col-lg-6 modalClass">
-                    <Carousel fade controls={true}>
+                    <Carousel fade controls={false}>
                       <Carousel.Item>
                         {loading ? (
                           <Skeleton
@@ -127,13 +96,6 @@ function ProductCard(props) {
                             alt={product.title}
                           />
                         )}
-                        {/* <Skeleton variant="circular" width={40} height={40} /> <Skeleton variant="text" />
-                        <Skeleton
-                          variant="rectangular"
-                          width={421}
-                          height={590}
-                          animation="wave"
-                        /> */}
                       </Carousel.Item>
                       <Carousel.Item>
                         {loading ? (
@@ -243,81 +205,8 @@ function ProductCard(props) {
                 </div>
               </Modal.Body>
             </Modal>
-            {/* )} */}
-
-            {/*working 100%  */}
-            {/* <div className="mt-auto">
-            {productQuantity > 0 ? (
-              <>
-                <div
-                  className="d-flex align-items-center flex-column"
-                  style={{ gap: ".5rem" }}
-                >
-                  <div
-                    className="d-flex align-items-center justify-content-center"
-                    style={{ gap: ".5rem" }}
-                  >
-                    <Button onClick={() => cart.removeOneToCart(product.id)}>
-                      -
-                    </Button>
-                    <div>
-                      <span className="fs-3">{productQuantity} </span>
-                      in the cart
-                    </div>
-                    <Button onClick={() => cart.addOneToCart(product.id)}>
-                      +
-                    </Button>
-                  </div>
-                  <Button
-                    variant="danger"
-                    size="sm"
-                    onClick={() => cart.deleteFromCart(product.id)}
-                  >
-                    Remove
-                  </Button>
-                </div>
-              </>
-            ) : (
-              <Button
-                className="w-100"
-                onClick={() => cart.addOneToCart(product.id)}
-              >
-                Add To Cart
-              </Button>
-            )} */}
-            {/* {productQuantity > 0 ? (
-              <>
-                <div
-                  className="d-flex align-items-center flex-column"
-                  style={{ gap: ".5rem" }}
-                >
-                  <div
-                    className="d-flex align-items-center justify-content-center"
-                    style={{ gap: ".5rem" }}
-                  >
-                    <Button>-</Button>
-                    <div>
-                      <span className="fs-3">3 </span>
-                      in the cart
-                    </div>
-                    <Button>+</Button>
-                  </div>
-                  <Button variant="danger" size="sm">
-                    Remove
-                  </Button>
-                </div>
-              </>
-            ) : (
-              <Button className="w-100">Add To Cart</Button>
-            )}
-          */}
           </div>
         </Card.Body>
-        {/* <Card.Body>
-          <Card.Title>{product.title}</Card.Title>
-          <Card.Text>{product.price}</Card.Text>
-          <Button variant="primary">Add To Cart</Button>
-        </Card.Body> */}
       </Card>
     </>
   );
