@@ -59,7 +59,6 @@ export default function BlogSection() {
             <CardContent className="blog-content" style={{ paddingLeft: 0 }}>
               <Fade right>
                 <Typography gutterBottom variant="h5" component="div">
-                  {/* INFORMATION WORKSHOP ABOUT IGITENGE FASHION */}
                   {item.title}
                 </Typography>
                 <Typography variant="body2" color="text.secondary">

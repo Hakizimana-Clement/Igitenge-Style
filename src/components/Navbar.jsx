@@ -26,36 +26,6 @@ export default function Navbar() {
   };
   window.addEventListener("scroll", changeBackground);
 
-  // send data to server
-  // const checkout = async () => {
-  //   try {
-  //     // Use await instead of then to avoid nesting and improve readability
-  //     const response = await fetch(
-  //       `${process.env.REACT_APP_BACKEND_URL}/checkout`,
-  //       {
-  //         method: "POST",
-  //         headers: {
-  //           "Content-Type": "application/json",
-  //         },
-  //         body: JSON.stringify({ items: cart.items }),
-  //       }
-  //     );
-  //     // Check if the response is ok before parsing it as json
-  //     if (response.ok) {
-  //       const data = await response.json();
-  //       if (data.url) {
-  //         window.location.assign(data.url); // Forwarding user to Stripe
-  //       }
-  //     } else {
-  //       // Handle errors
-  //       console.error(response.status, response.statusText);
-  //     }
-  //   } catch (error) {
-  //     // Catch any network or parsing errors
-  //     console.error(error);
-  //   }
-  // };
-
   const checkout = async () => {
     await fetch(`${process.env.REACT_APP_BACKEND_URL}/checkout`, {
       method: "POST",
@@ -119,11 +89,6 @@ export default function Navbar() {
                   Products
                 </a>
               </li>
-              {/* <li className="nav-item">
-                  <a className="nav-link " aria-current="page" href="#blog">
-                    Blog
-                  </a>
-                </li> */}
               <li className="nav-item">
                 <a className="nav-link " aria-current="page" href="#aboutUs">
                   About
@@ -146,7 +111,6 @@ export default function Navbar() {
                 id="Capa_1"
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 904.86 902.86"
-                // style={{ width: "43%" }}
                 className="svg-icon"
               >
                 <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>

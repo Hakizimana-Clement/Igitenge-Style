@@ -7,7 +7,6 @@ const ContactForm = () => {
   const [message, setMessage] = useState("");
   const [error, setError] = useState(null);
   // LOGIC FOR SUBMITTING
-
   const submitContacts = async (e) => {
     e.preventDefault();
 

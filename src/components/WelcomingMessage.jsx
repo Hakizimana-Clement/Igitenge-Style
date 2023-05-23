@@ -1,4 +1,5 @@
 import React from "react";
+
 function WelcomingMessage() {
   return (
     <div className="col-lg-6  welcoming-message">

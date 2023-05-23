@@ -12,7 +12,6 @@ export const CartContext = createContext({
 });
 
 export function CartProvider({ children }) {
-  // eslint-disable-next-line react-hooks/rules-of-hooks
   const [cartProducts, setCartProducts] = useState([]);
 
   function getProductQuantity(id) {
@@ -42,7 +41,7 @@ export function CartProvider({ children }) {
     const quantity = getProductQuantity(id);
 
     if (quantity === 0) {
-      // prooduct is not in the cart
+      // product is not in the cart
       setCartProducts([
         ...cartProducts,
         {

@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import ContactsDetails from "./ContactsDetails";
 const Contacts = () => {
-  ///////////////// FETCH DATA /////////////////////////
   const [contacts, setContacts] = useState(null);
   useEffect(() => {
     const fetchContacts = async () => {
@@ -16,7 +15,6 @@ const Contacts = () => {
     };
     fetchContacts();
   }, []);
-  ///////////////////////////////////////////////////////
   return (
     <>
       <h2>Contacts List:</h2>
