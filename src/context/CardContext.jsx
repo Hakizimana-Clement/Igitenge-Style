@@ -67,10 +67,12 @@ export function CartProvider({ children }) {
     if (quantity === 1) {
       deleteFromCart(id);
     } else {
-      cartProducts.map((product) =>
-        product.id === id
-          ? { ...product, quantity: product.quantity - 1 }
-          : product
+      setCartProducts(
+        cartProducts.map((product) =>
+          product.id === id
+            ? { ...product, quantity: product.quantity - 1 }
+            : product
+        )
       );
     }
   }
@@ -104,5 +106,4 @@ export function CartProvider({ children }) {
     <CartContext.Provider value={contextValue}>{children}</CartContext.Provider>
   );
 }
-
 export default CartProvider;
