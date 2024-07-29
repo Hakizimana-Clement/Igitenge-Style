@@ -1,9 +1,9 @@
 const ibitengeImageStore = [
   {
     id: "price_1N5YLLD9C3pt8rsMqnACEFP0",
-    img: "https://cdn.shopify.com/s/files/1/0684/2619/products/Chane-Mens-African-Print-Shirt-1_1000x1400.jpg?v=1668456797",
-    img2: "https://cdn.shopify.com/s/files/1/0684/2619/products/Chane-Mens-African-Print-Shirt-3_700x.jpg?v=1668457041",
-    img3: "https://cdn.shopify.com/s/files/1/0684/2619/products/Chane-Mens-African-Print-Button-Up-BP-3_700x.jpg?v=1668457176",
+    img: "https://www.diyanu.com/cdn/shop/files/Tahir_Men_s_African_Print_Button-Up_Shirt_Orange_Blue_Adire_-02_400x.jpg?v=1717710428",
+    img2: "https://www.diyanu.com/cdn/shop/files/Tahir_Men_s_African_Print_Button-Up_Shirt_Orange_Blue_Adire_-09_800x.jpg?v=1717710426",
+    img3: "https://www.diyanu.com/cdn/shop/files/Tahir_Men_s_African_Print_Button-Up_Shirt_Orange_Blue_Adire_-05_400x.jpg?v=1717710428",
     title: "Imikako shirt",
     price: 100,
     description1: "100% Cotton Ankara Body",
@@ -194,10 +194,9 @@ const ibitengeImageStore = [
   },
   {
     id: "price_1N5l5xD9C3pt8rsM8AtiraIm",
-    img: "https://cdn.shopify.com/s/files/1/0684/2619/products/jackets-rammy-men-s-african-print-blazer-black-brown-geometric-1_1000x1400.jpg?v=1528234755",
-
-    img2: "https://cdn.shopify.com/s/files/1/0684/2619/products/jackets-rammy-men-s-african-print-blazer-black-brown-geometric-2_700x.jpg?v=1528234755",
-    img3: "https://cdn.shopify.com/s/files/1/0684/2619/products/jackets-rammy-men-s-african-print-blazer-black-brown-geometric-3_700x.jpg?v=1528234755",
+    img: "https://cdn.shopify.com/s/files/1/0684/2619/products/jackets-rammy-men-s-african-print-blazer-black-brown-geometric-2_700x.jpg?v=1528234755",
+    img2: "https://cdn.shopify.com/s/files/1/0684/2619/products/jackets-rammy-men-s-african-print-blazer-black-brown-geometric-3_700x.jpg?v=1528234755",
+    img3: "https://cdn.shopify.com/s/files/1/0684/2619/products/jackets-rammy-men-s-african-print-blazer-black-brown-geometric-2_700x.jpg?v=1528234755",
     title: "Tom suit",
     price: 400,
 

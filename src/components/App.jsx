@@ -1,8 +1,9 @@
 import React from "react";
-import Navbar from "./Navbar";
+import CardProvider from "../context/CardContext";
 import AllRoutesAndPages from "./AllRoutes&Pages";
 import Dialog from "./Dialog";
-import CardProvider from "../context/CardContext";
+import Navbar from "./Navbar";
+
 export default function App() {
   return (
     <>
