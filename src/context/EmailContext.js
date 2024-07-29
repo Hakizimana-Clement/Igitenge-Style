@@ -1,6 +1,7 @@
 import { createContext, useReducer } from "react";
 
 export const EmailsContext = createContext();
+
 export const emailsReducer = (state, action) => {
   switch (action.type) {
     case "SET_EMAILS":
